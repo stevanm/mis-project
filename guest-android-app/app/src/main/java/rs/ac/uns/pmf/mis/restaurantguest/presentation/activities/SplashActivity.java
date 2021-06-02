@@ -1,4 +1,4 @@
-package rs.ac.uns.pmf.mis.restaurantguest.presentation;
+package rs.ac.uns.pmf.mis.restaurantguest.presentation.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

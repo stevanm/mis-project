@@ -3,6 +3,7 @@
     package="rs.ac.uns.pmf.mis.restaurantguest">
 
     <application
+        android:name=".framework.RestaurantApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,14 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restaurantguest">
 
-        <activity android:name=".presentation.SplashActivity">
+        <activity android:name=".presentation.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".presentation.MainActivity" />
+        <activity android:name=".presentation.activities.MainActivity" />
 
     </application>
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.StartFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.StartFragment"
         android:label="start_first"
         tools:layout="@layout/fragment_start">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.MenuFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.MenuFragment"
         android:label="manu_second"
         tools:layout="@layout/fragment_menu">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.LoginFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action

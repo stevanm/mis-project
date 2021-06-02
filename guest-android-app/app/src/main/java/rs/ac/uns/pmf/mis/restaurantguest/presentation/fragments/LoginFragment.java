@@ -1,4 +1,4 @@
-package rs.ac.uns.pmf.mis.restaurantguest.presentation;
+package rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
