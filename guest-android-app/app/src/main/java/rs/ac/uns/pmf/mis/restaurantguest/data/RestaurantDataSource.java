@@ -18,7 +18,7 @@ import rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.RestaurantEntit
 
 public class RestaurantDataSource implements RestaurantRepository {
 
-    private Application application;
+    private final Application application;
 
     public RestaurantDataSource(Application application) {
         this.application = application;

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,6 +30,7 @@ public class MenuFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private MainViewModel viewModel;
+    private TextView restaurant_name;
 
     public MenuFragment() {
         // Required empty public constructor
@@ -57,6 +59,14 @@ public class MenuFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // ui
+        restaurant_name = view.findViewById(R.id.restaurant_name);
+        recyclerView = view.findViewById(R.id.order_menu);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        OrderMenuAdapter orderMenuAdapter = new OrderMenuAdapter();
+        recyclerView.setAdapter(orderMenuAdapter);
+
+
         RestaurantRepository restaurantRepository = ((RestaurantApplication) context.getApplicationContext()).getRestaurantRepository();
         viewModel = new ViewModelProvider(this,
                 new MainViewModelFactory(((RestaurantApplication) context.getApplicationContext()), restaurantRepository))
@@ -66,14 +76,12 @@ public class MenuFragment extends Fragment {
                 {
                     if (null != restaurantEntity) {
                         Toast.makeText(context, restaurantEntity.toString(), Toast.LENGTH_SHORT).show();
+                        restaurant_name.setText(restaurantEntity.getRestaurantInfo().getName());
                     }
                 }
         );
 
-        recyclerView = view.findViewById(R.id.order_menu);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        OrderMenuAdapter orderMenuAdapter = new OrderMenuAdapter();
-        recyclerView.setAdapter(orderMenuAdapter);
+
     }
 
 }
