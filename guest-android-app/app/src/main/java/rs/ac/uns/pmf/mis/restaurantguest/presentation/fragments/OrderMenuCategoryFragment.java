@@ -20,24 +20,24 @@ import org.jetbrains.annotations.NotNull;
 import rs.ac.uns.pmf.mis.restaurantguest.R;
 import rs.ac.uns.pmf.mis.restaurantguest.data.RestaurantRepository;
 import rs.ac.uns.pmf.mis.restaurantguest.framework.RestaurantApplication;
-import rs.ac.uns.pmf.mis.restaurantguest.presentation.adapters.OrderMenuAdapter;
+import rs.ac.uns.pmf.mis.restaurantguest.presentation.adapters.OrderMenuCategoryAdapter;
 import rs.ac.uns.pmf.mis.restaurantguest.presentation.viewmodels.MainViewModel;
 import rs.ac.uns.pmf.mis.restaurantguest.presentation.viewmodels.MainViewModelFactory;
 
-public class MenuFragment extends Fragment {
+public class OrderMenuCategoryFragment extends Fragment {
 
     private Context context;
 
     private RecyclerView recyclerView;
     private MainViewModel viewModel;
-    private TextView restaurant_name;
+    private TextView restaurant_menu;
 
-    public MenuFragment() {
+    public OrderMenuCategoryFragment() {
         // Required empty public constructor
     }
 
-    public static MenuFragment newInstance(String param1, String param2) {
-        MenuFragment fragment = new MenuFragment();
+    public static OrderMenuCategoryFragment newInstance(String param1, String param2) {
+        OrderMenuCategoryFragment fragment = new OrderMenuCategoryFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -52,7 +52,7 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        return inflater.inflate(R.layout.fragment_order_menu_category, container, false);
     }
 
     @Override
@@ -60,11 +60,11 @@ public class MenuFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // ui
-        restaurant_name = view.findViewById(R.id.restaurant_name);
+        restaurant_menu = view.findViewById(R.id.restaurant_menu);
         recyclerView = view.findViewById(R.id.order_menu);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        OrderMenuAdapter orderMenuAdapter = new OrderMenuAdapter();
-        recyclerView.setAdapter(orderMenuAdapter);
+        OrderMenuCategoryAdapter orderMenuCategoryAdapter = new OrderMenuCategoryAdapter(getActivity());
+        recyclerView.setAdapter(orderMenuCategoryAdapter);
 
 
         RestaurantRepository restaurantRepository = ((RestaurantApplication) context.getApplicationContext()).getRestaurantRepository();
@@ -76,7 +76,8 @@ public class MenuFragment extends Fragment {
                 {
                     if (null != restaurantEntity) {
                         Toast.makeText(context, restaurantEntity.toString(), Toast.LENGTH_SHORT).show();
-                        restaurant_name.setText(restaurantEntity.getRestaurantInfo().getName());
+                        restaurant_menu.setText(restaurantEntity.getType());
+                        orderMenuCategoryAdapter.setCategoriesItems(restaurantEntity.getCategorys());
                     }
                 }
         );

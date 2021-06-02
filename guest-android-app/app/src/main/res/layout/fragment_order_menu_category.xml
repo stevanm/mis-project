@@ -4,16 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.fragments.MenuFragment">
+    tools:context=".presentation.fragments.OrderMenuCategoryFragment">
 
     <TextView
-        android:id="@+id/restaurant_name"
+        android:id="@+id/restaurant_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/order_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/teal_700" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

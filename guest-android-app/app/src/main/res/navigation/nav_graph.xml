@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.StartFragment"
+        android:label="start_first"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_menuCategoryFragment"
+            app:destination="@id/menuCategoryFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuCategoryFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.OrderMenuCategoryFragment"
+        android:label="menu_second"
+        tools:layout="@layout/fragment_order_menu_category">
+        <action
+            android:id="@+id/action_menuCategoryFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_menuCategoryFragment_to_orderMenuItemsFragment"
+            app:destination="@id/orderMenuItemsFragment" />
+        <argument
+            android:name="selected_category"
+            app:argType="rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.CategorysItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderMenuItemsFragment"
+        android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.OrderMenuItemsFragment"
+        android:label="OrderMenuItemsFragment">
+        <action
+            android:id="@+id/action_orderMenuItemsFragment_to_menuFragment"
+            app:destination="@id/menuCategoryFragment" />
+    </fragment>
+</navigation>

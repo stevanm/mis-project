@@ -28,7 +28,7 @@ public class StartFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_start, container, false);
-        view.findViewById(R.id.guest).setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_startFragment_to_menuFragment));
+        view.findViewById(R.id.guest).setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_startFragment_to_menuCategoryFragment));
         view.findViewById(R.id.waiter).setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_startFragment_to_loginFragment));
         return view;
     }
