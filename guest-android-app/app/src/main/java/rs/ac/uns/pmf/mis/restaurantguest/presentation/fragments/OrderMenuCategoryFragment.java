@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,7 +28,6 @@ public class OrderMenuCategoryFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private MainViewModel viewModel;
-    private TextView restaurant_menu;
 
     public OrderMenuCategoryFragment() {
         // Required empty public constructor
@@ -60,8 +57,7 @@ public class OrderMenuCategoryFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // ui
-        restaurant_menu = view.findViewById(R.id.restaurant_menu);
-        recyclerView = view.findViewById(R.id.order_menu);
+        recyclerView = view.findViewById(R.id.order_menu_category);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         OrderMenuCategoryAdapter orderMenuCategoryAdapter = new OrderMenuCategoryAdapter(getActivity());
         recyclerView.setAdapter(orderMenuCategoryAdapter);
@@ -75,8 +71,6 @@ public class OrderMenuCategoryFragment extends Fragment {
                 restaurantEntity ->
                 {
                     if (null != restaurantEntity) {
-                        Toast.makeText(context, restaurantEntity.toString(), Toast.LENGTH_SHORT).show();
-                        restaurant_menu.setText(restaurantEntity.getType());
                         orderMenuCategoryAdapter.setCategoriesItems(restaurantEntity.getCategorys());
                     }
                 }

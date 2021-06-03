@@ -4,4 +4,7 @@
     <string name="i_am_waiter">I am Waiter.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="restaurant_menu">Restaurant menu</string>
+    <string name="cancel">Cancel</string>
+    <string name="make_order">Make order</string>
 </resources>

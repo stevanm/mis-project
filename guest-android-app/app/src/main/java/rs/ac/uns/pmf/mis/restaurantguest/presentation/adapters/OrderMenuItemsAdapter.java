@@ -3,8 +3,8 @@ package rs.ac.uns.pmf.mis.restaurantguest.presentation.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,9 +34,8 @@ public class OrderMenuItemsAdapter extends RecyclerView.Adapter<OrderMenuItemsAd
 
         holder.itemView.setOnClickListener(v ->
                 {
-                    Toast.makeText(v.getContext(), item.toString(), Toast.LENGTH_SHORT).show();
-                    //navigate to menu items for specific category
-
+                    int visiblity = v.findViewById(R.id.check).getVisibility();
+                    holder.check.setVisibility(visiblity == View.VISIBLE ? View.GONE : View.VISIBLE);
                 }
         );
     }
@@ -50,11 +49,13 @@ public class OrderMenuItemsAdapter extends RecyclerView.Adapter<OrderMenuItemsAd
 
         private final TextView name;
         private final TextView desc;
+        private final ImageView check;
 
         public OrderViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
             desc = itemView.findViewById(R.id.description);
+            check = itemView.findViewById(R.id.check);
         }
     }
 

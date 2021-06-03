@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,6 +27,8 @@ public class OrderMenuItemsFragment extends Fragment {
     private CategorysItem categorysItem;
 
     private RecyclerView recyclerView;
+    private Button cancelOrder;
+    private Button makeOrder;
 
     public OrderMenuItemsFragment() {
         // Required empty public constructor
@@ -34,8 +38,8 @@ public class OrderMenuItemsFragment extends Fragment {
     public void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        categorysItem = savedInstanceState != null ?
-                savedInstanceState.getParcelable("selected_category") : null;
+        OrderMenuItemsFragmentArgs orderMenuItemsFragmentArgs = OrderMenuItemsFragmentArgs.fromBundle(getArguments());
+        categorysItem = orderMenuItemsFragmentArgs.getSelectedCategory();
     }
 
     @Override
@@ -47,7 +51,7 @@ public class OrderMenuItemsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_order_menu_item, container, false);
+        return inflater.inflate(R.layout.fragment_order_menu_items, container, false);
     }
 
     @Override
@@ -55,15 +59,29 @@ public class OrderMenuItemsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // ui
+        makeOrder = view.findViewById(R.id.make_order);
+        cancelOrder = view.findViewById(R.id.cancel);
+
         recyclerView = view.findViewById(R.id.order_menu_items);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         OrderMenuItemsAdapter orderMenuItemsAdapter = new OrderMenuItemsAdapter();
         recyclerView.setAdapter(orderMenuItemsAdapter);
 
         if (null != categorysItem) {
-            Toast.makeText(context, categorysItem.toString(), Toast.LENGTH_SHORT).show();
             orderMenuItemsAdapter.setMenuItems(categorysItem.getMenuItems());
         }
+
+        makeOrder.setOnClickListener(v ->
+                {
+                    Toast.makeText(v.getContext(), "You made your order!", Toast.LENGTH_SHORT).show();
+                }
+        );
+
+        cancelOrder.setOnClickListener(v ->
+                {
+                    Navigation.findNavController(v).navigate(R.id.action_orderMenuItemsFragment_to_menuFragment);
+                }
+        );
 
     }
 

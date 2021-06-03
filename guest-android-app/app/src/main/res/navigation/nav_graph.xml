@@ -28,9 +28,6 @@
         <action
             android:id="@+id/action_menuCategoryFragment_to_orderMenuItemsFragment"
             app:destination="@id/orderMenuItemsFragment" />
-        <argument
-            android:name="selected_category"
-            app:argType="rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.CategorysItem" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -48,5 +45,8 @@
         <action
             android:id="@+id/action_orderMenuItemsFragment_to_menuFragment"
             app:destination="@id/menuCategoryFragment" />
+        <argument
+            android:name="selected_category"
+            app:argType="rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.CategorysItem" />
     </fragment>
 </navigation>
