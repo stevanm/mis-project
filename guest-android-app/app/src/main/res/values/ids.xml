@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="submenu_name" type="id" />
+    <item name="submenu_price" type="id" />
+    <item name="submenu_check" type="id" />
+</resources>

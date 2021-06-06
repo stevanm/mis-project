@@ -33,7 +33,7 @@ public class OrderMenuCategoryFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static OrderMenuCategoryFragment newInstance(String param1, String param2) {
+    public static OrderMenuCategoryFragment newInstance() {
         OrderMenuCategoryFragment fragment = new OrderMenuCategoryFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
@@ -62,9 +62,8 @@ public class OrderMenuCategoryFragment extends Fragment {
         OrderMenuCategoryAdapter orderMenuCategoryAdapter = new OrderMenuCategoryAdapter(getActivity());
         recyclerView.setAdapter(orderMenuCategoryAdapter);
 
-
         RestaurantRepository restaurantRepository = ((RestaurantApplication) context.getApplicationContext()).getRestaurantRepository();
-        viewModel = new ViewModelProvider(this,
+        viewModel = new ViewModelProvider(requireActivity(),
                 new MainViewModelFactory(((RestaurantApplication) context.getApplicationContext()), restaurantRepository))
                 .get(MainViewModel.class);
         viewModel.getRestaurantData().observe(getViewLifecycleOwner(),

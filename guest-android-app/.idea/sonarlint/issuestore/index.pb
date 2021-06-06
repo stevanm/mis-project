@@ -26,8 +26,6 @@ X
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/Employees.java,5\2\5221934d9f627c1a9fa8d427f2270a61227a1b0a
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-‚
-Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantRepository.java,b\e\be8c9685465c8ad69b745ccbd425db9104657d94
 
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeEntity.java,f\b\fbdf43b9d3221ec91cac0e570952dec1ceb9f79f
 ”
@@ -60,3 +58,17 @@ Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Thu
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/TueItem.java,2\b\2beb4f91482d26de897e808bef14284501dd2abd
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/WedItem.java,e\9\e96567b5fc44b4f4b5776888ca0ed0a09ba9633a
+
+^app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/CategorysItem.java,f\7\f72ae57446e9a8279bcf8ad5d4bd774de624006c
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+‰
+Yapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Discount.java,2\c\2cd93a9d381fdf663aef5b2b2accc753ec000f96
+ˆ
+Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplication.java,c\a\ca2a18cfe9be7109e46011acd4e4b2b7b4b97766
+
+_app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
+ˆ
+Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/SatItem.java,d\c\dc4b08b74d9b7647789ec4e6e04e676acafd09ff

@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/action_startFragment_to_menuCategoryFragment"
-            app:destination="@id/menuCategoryFragment" />
+            app:destination="@id/menuCategoryFragment"
+            app:popUpTo="@id/menuCategoryFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_startFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -24,7 +26,9 @@
         tools:layout="@layout/fragment_order_menu_category">
         <action
             android:id="@+id/action_menuCategoryFragment_to_startFragment"
-            app:destination="@id/startFragment" />
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/menuCategoryFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_menuCategoryFragment_to_orderMenuItemsFragment"
             app:destination="@id/orderMenuItemsFragment" />
@@ -43,10 +47,17 @@
         android:name="rs.ac.uns.pmf.mis.restaurantguest.presentation.fragments.OrderMenuItemsFragment"
         android:label="OrderMenuItemsFragment">
         <action
-            android:id="@+id/action_orderMenuItemsFragment_to_menuFragment"
-            app:destination="@id/menuCategoryFragment" />
+            android:id="@+id/action_orderMenuItemsFragment_to_menuCategoryFragment"
+            app:destination="@id/menuCategoryFragment"
+            app:popUpTo="@id/orderMenuItemsFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="selected_category"
             app:argType="rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.CategorysItem" />
+        <action
+            android:id="@+id/action_orderMenuItemsFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/orderMenuItemsFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

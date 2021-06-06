@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">Restaurant Guest</string>
-    <string name="i_am_guest">I am Guest.</string>
-    <string name="i_am_waiter">I am Waiter.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="restaurant_menu">Restaurant menu</string>
-    <string name="cancel">Cancel</string>
-    <string name="make_order">Make order</string>
+    <string name="app_name" translatable="false">Gost</string>
+    <string name="i_am_guest" translatable="false">Gost</string>
+    <string name="i_am_waiter" translatable="false">Konobar</string>
+    <string name="restaurant_menu" translatable="false">Meni</string>
+    <string name="back" translatable="false">Nazad</string>
+    <string name="make_order" translatable="false">Poruči</string>
+    <string name="welcome">Dobrodošli</string>
+    <string name="current_price">Ukupno:</string>
+    <string name="order_made">Porudzbina je poslata!</string>
 </resources>

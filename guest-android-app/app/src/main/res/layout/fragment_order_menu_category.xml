@@ -19,6 +19,8 @@
         android:id="@+id/order_menu_category"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/teal_700" />
+        android:background="@color/primary_light"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

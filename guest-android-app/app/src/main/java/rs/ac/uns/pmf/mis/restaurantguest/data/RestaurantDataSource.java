@@ -12,13 +12,16 @@ import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 
 import rs.ac.uns.pmf.mis.restaurantguest.R;
 import rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.RestaurantEntity;
+import rs.ac.uns.pmf.mis.restaurantguest.domain.model.restaurant.SubItemsItem;
 
 public class RestaurantDataSource implements RestaurantRepository {
 
     private final Application application;
+    private final MutableLiveData<HashMap<String, SubItemsItem>> orderedItems = new MutableLiveData<>(new HashMap<>());
 
     public RestaurantDataSource(Application application) {
         this.application = application;
@@ -39,4 +42,36 @@ public class RestaurantDataSource implements RestaurantRepository {
         mutableLiveData.setValue(restaurantEntity);
         return mutableLiveData;
     }
+
+    @Override
+    public MutableLiveData<HashMap<String, SubItemsItem>> getOrderedItems() {
+        return orderedItems;
+    }
+
+    @Override
+    public void addOrRemoveFromBill(boolean removeFromBill, SubItemsItem item) {
+        String itemId = item.getId();
+        HashMap<String, SubItemsItem> map = orderedItems.getValue();
+        if (removeFromBill) {
+            if (null != map) {
+                map.remove(itemId);
+            }
+        } else {
+            if (null != map) {
+                map.put(itemId, item);
+            }
+        }
+        orderedItems.postValue(map);
+    }
+
+    @Override
+    public void clearRepositoryData() {
+        HashMap<String, SubItemsItem> map = orderedItems.getValue();
+        if (null != map) {
+            map.clear();
+            orderedItems.postValue(map);
+        }
+
+    }
+
 }
