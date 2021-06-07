@@ -40,18 +40,23 @@ public class StartFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
 
-        EditText inputAddress = view.findViewById(R.id.address);
         View addressLayout = view.findViewById(R.id.addressLayout);
+        EditText inputAddress = view.findViewById(R.id.address);
+
+        View tableNumberLayout = view.findViewById(R.id.tableNumberLayout);
+        EditText tableNumber = view.findViewById(R.id.tableNumber);
+
         RadioGroup radioGroup = view.findViewById(R.id.optionRadioGroup);
         RadioButton optionRestaurant = radioGroup.findViewById(R.id.optionRestaurant);
         RadioButton optionHome = radioGroup.findViewById(R.id.optionHome);
 
         view.findViewById(R.id.goToMenuButton).setOnClickListener(v ->
                 {
-                    if (!inputAddress.getText().toString().trim().isEmpty() || optionRestaurant.isChecked()) {
+                    if ((!inputAddress.getText().toString().trim().isEmpty() && optionHome.isChecked()) || (!tableNumber.getText().toString().trim().isEmpty() && optionRestaurant.isChecked())) {
                         Navigation.findNavController(v).navigate(R.id.action_startFragment_to_menuCategoryFragment);
                     } else {
-                        inputAddress.setError(getString(R.string.take_a_way_address));
+                        inputAddress.setError(getString(R.string.take_a_way_address_or_table_number));
+                        tableNumber.setError(getString(R.string.take_a_way_address_or_table_number));
                     }
                 }
         );
@@ -59,12 +64,14 @@ public class StartFragment extends Fragment {
         optionRestaurant.setOnClickListener(v -> {
             if (optionRestaurant.isChecked()) {
                 addressLayout.setVisibility(View.GONE);
+                tableNumberLayout.setVisibility(View.VISIBLE);
             }
         });
 
         optionHome.setOnClickListener(v -> {
             if (optionHome.isChecked()) {
                 addressLayout.setVisibility(View.VISIBLE);
+                tableNumberLayout.setVisibility(View.GONE);
             }
         });
 

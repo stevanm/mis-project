@@ -58,6 +58,28 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/tableNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/primary_light"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_table_number" />
+
+        <EditText
+            android:id="@+id/tableNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/goToMenuButton"
         android:layout_width="wrap_content"

@@ -13,5 +13,6 @@
     <string name="restaurant" translatable="false">Restoran</string>
     <string name="meni" translatable="false">Meni</string>
     <string name="current_time">Vreme dostave:</string>
-    <string name="take_a_way_address">Unesite adresu dostave!</string>
+    <string name="take_a_way_address_or_table_number">Unesite adresu dostave/broj stola!</string>
+    <string name="input_table_number">Unesite broj stola:</string>
 </resources>

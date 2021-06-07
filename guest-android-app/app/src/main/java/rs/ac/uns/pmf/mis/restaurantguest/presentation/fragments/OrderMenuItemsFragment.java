@@ -87,7 +87,7 @@ public class OrderMenuItemsFragment extends Fragment implements OrderMenuItemsAd
                     Toast.makeText(getContext(), context.getString(R.string.order_made), Toast.LENGTH_SHORT).show();
                     currentTime.setText(new Random().nextInt(100) + " min");
                     viewModel.clearRepositoryData();
-                    new Handler().postDelayed(() -> Navigation.findNavController(v).navigate(R.id.action_orderMenuItemsFragment_to_startFragment), 2000);
+                    new Handler().postDelayed(() -> Navigation.findNavController(v).navigate(R.id.action_orderMenuItemsFragment_to_startFragment), 5000);
                 }
         );
 
