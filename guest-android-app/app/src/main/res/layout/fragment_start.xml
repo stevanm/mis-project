@@ -1,41 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".presentation.fragments.StartFragment">
 
-    <LinearLayout
+
+    <RadioGroup
+        android:id="@+id/optionRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:background="@color/primary_light"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp">
 
-        <Button
-            android:id="@+id/guest"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/optionRestaurant"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:gravity="center"
-            android:text="@string/i_am_guest"
-            android:textAllCaps="false"
-            android:textSize="20sp" />
+            android:checked="true"
+            android:text="@string/restaurant" />
 
-        <Button
-            android:id="@+id/waiter"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/optionHome"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:gravity="center"
-            android:text="@string/i_am_waiter"
-            android:textAllCaps="false"
-            android:textSize="20sp" />
+            android:text="@string/take_for_a_way" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/primary_light"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_address" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/goToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/primary_light"
+        android:text="@string/meni"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -5,7 +5,13 @@
     <string name="restaurant_menu" translatable="false">Meni</string>
     <string name="back" translatable="false">Nazad</string>
     <string name="make_order" translatable="false">Poruči</string>
-    <string name="welcome">Dobrodošli</string>
-    <string name="current_price">Ukupno:</string>
-    <string name="order_made">Porudzbina je poslata!</string>
+    <string name="welcome" translatable="false">Dobrodošli</string>
+    <string name="current_price" translatable="false">Ukupno:</string>
+    <string name="order_made" translatable="false">Vaša porudzbina je poslata! Molimo Vas sačekajte!</string>
+    <string name="input_address" translatable="false">Unesite adresu:</string>
+    <string name="take_for_a_way" translatable="false">Kućna dostava</string>
+    <string name="restaurant" translatable="false">Restoran</string>
+    <string name="meni" translatable="false">Meni</string>
+    <string name="current_time">Vreme dostave:</string>
+    <string name="take_a_way_address">Unesite adresu dostave!</string>
 </resources>

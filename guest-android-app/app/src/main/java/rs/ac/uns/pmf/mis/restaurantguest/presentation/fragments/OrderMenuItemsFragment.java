@@ -22,6 +22,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import rs.ac.uns.pmf.mis.restaurantguest.R;
 import rs.ac.uns.pmf.mis.restaurantguest.data.RestaurantRepository;
@@ -44,6 +45,7 @@ public class OrderMenuItemsFragment extends Fragment implements OrderMenuItemsAd
     private Button make_order;
 
     private TextView currentPrice;
+    private TextView currentTime;
 
     public OrderMenuItemsFragment() {
         // Required empty public constructor
@@ -78,10 +80,13 @@ public class OrderMenuItemsFragment extends Fragment implements OrderMenuItemsAd
         cancel = view.findViewById(R.id.cancel);
         recyclerView = view.findViewById(R.id.order_menu_items);
         currentPrice = view.findViewById(R.id.current_price);
+        currentTime = view.findViewById(R.id.current_time);
 
         make_order.setOnClickListener(v ->
                 {
                     Toast.makeText(getContext(), context.getString(R.string.order_made), Toast.LENGTH_SHORT).show();
+                    currentTime.setText(new Random().nextInt(100) + " min");
+                    viewModel.clearRepositoryData();
                     new Handler().postDelayed(() -> Navigation.findNavController(v).navigate(R.id.action_orderMenuItemsFragment_to_startFragment), 2000);
                 }
         );

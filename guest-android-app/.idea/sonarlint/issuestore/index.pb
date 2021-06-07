@@ -72,3 +72,11 @@ Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplica
 _app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/SatItem.java,d\c\dc4b08b74d9b7647789ec4e6e04e676acafd09ff
+—
+gapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/adapters/OrderMenuCategoryAdapter.java,8\8\88993278d603ceda3fd3f1b28f3cb56d2e14e29c
+
+]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/MainActivity.java,c\1\c1a39ad34c9bce0a99799cf84092f706c6935153
+
+]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/LoginFragment.java,a\e\aee4dfd73f791d00a759ee5feba6e7b54f795420
+•
+eapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/viewmodels/MainViewModelFactory.java,7\9\79a5d70e9df06f6cac25f9a66e5f11210e6a1363
