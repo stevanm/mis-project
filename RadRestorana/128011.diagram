@@ -2,84 +2,118 @@ format 224
 
 classcanvas 128011 class_ref 128011 // Gost
   simpleclassdiagramsettings end
-  xyz 23.4 167.4 2000
+  xyz 23.2646 167.776 2000
 end
-usecasecanvas 128395 usecase_ref 128139 // Pregled menu-a
-  xyzwh 161.8 175.2 3005 101 39 label_xy 171 185
+usecasecanvas 128395 usecase_ref 128139 // Pregled meni-a
+  xyzwh 161.336 175.389 3005 101 39 label_xy 173 185
 end
 usecasecanvas 128651 usecase_ref 128267 // Kreiranje porudzbine u restoranu
-  xyzwh 345.2 191.8 3005 179 51 label_xy 351 207
+  xyzwh 345.633 191.32 3005 179 51 label_xy 351 207
 end
 classcanvas 129291 class_ref 128139 // Konobar
   simpleclassdiagramsettings end
-  xyz 837.8 151.6 3010
+  xyz 837.089 151.027 3010
 end
 usecasecanvas 129547 usecase_ref 128395 // Pregled svih porudzbina
-  xyzwh 497 359.8 3005 138 55 label_xy 507 378
+  xyzwh 497.221 359.784 3005 138 55 label_xy 507 378
 end
 classcanvas 129931 class_ref 128267 // Sanker
   simpleclassdiagramsettings end
-  xyz 695.2 505.2 2000
+  xyz 695.945 505.512 2000
 end
 classcanvas 130059 class_ref 128395 // Kuvar
   simpleclassdiagramsettings end
-  xyz 814.2 578.2 2000
+  xyz 814.574 578.282 2000
 end
 usecasecanvas 130187 usecase_ref 128523 // Porucivanje hrane za dostavu
-  xyzwh 139.8 60.6 3005 154 44 label_xy 143 73
+  xyzwh 139.323 59.7449 3005 154 44 label_xy 143 73
 end
 usecasecanvas 130571 usecase_ref 128651 // Odabir jela
-  xyzwh 392.6 85 3005 98 36 label_xy 414 95
+  xyzwh 391.614 84.6788 3005 98 36 label_xy 414 95
 end
 usecasecanvas 130955 usecase_ref 128779 // Unos podataka o dostavi
-  xyzwh 329.2 8.2 3005 139 44 label_xy 339 22
+  xyzwh 329.747 7.90868 3005 139 44 label_xy 339 22
 end
 usecasecanvas 131211 usecase_ref 128907 // Pregled porucenih pica
-  xyzwh 602.4 430.8 3005 124 42 label_xy 610 444
+  xyzwh 601.912 429.583 3005 124 42 label_xy 610 444
 end
 usecasecanvas 131339 usecase_ref 129035 // Pregled porucenih jela
-  xyzwh 748.6 365.4 3005 128 38 label_xy 762 375
+  xyzwh 748.446 364.794 3005 128 38 label_xy 762 375
 end
 usecasecanvas 131851 usecase_ref 129163 // Azuriranje statusa porudzbine
-  xyzwh 349.8 561.2 3005 154 48 label_xy 358 574
+  xyzwh 348.662 561.161 3005 154 48 label_xy 358 574
 end
 usecasecanvas 132363 usecase_ref 129291 // Provera Statusa porudzbine
-  xyzwh 216.4 275.6 3005 146 64 label_xy 220 300
+  xyzwh 216.093 275.036 3005 146 64 label_xy 220 300
 end
 usecasecanvas 133899 usecase_ref 129675 // Prikaz pripremljenih porudzbina za dostavu
-  xyzwh 882.8 237.6 3005 218 55 label_xy 888 255
+  xyzwh 881.882 237.169 3005 218 55 label_xy 888 255
 end
 usecasecanvas 134027 usecase_ref 129803 // Pregled svih nenaplacenih porudzbina
-  xyzwh 573 272.2 3005 206 55 label_xy 583 292
+  xyzwh 572.874 272.058 3005 206 55 label_xy 583 292
 end
 classcanvas 134795 class_ref 128523 // Dostavljac
   simpleclassdiagramsettings end
-  xyz 927.4 42 2000
+  xyz 927.389 42.7701 2000
 end
 usecasecanvas 135691 usecase_ref 130059 // Kreiranje racuna
-  xyzwh 785.2 69.6 3005 89 36 label_xy 788 80
+  xyzwh 785.389 68.7292 3005 89 36 label_xy 788 80
 end
 usecasecanvas 135819 usecase_ref 130187 // Izdavanje racuna
-  xyzwh 610.4 70.8 3005 99 38 label_xy 617 81
+  xyzwh 610.925 69.7229 3005 99 38 label_xy 617 81
 end
 usecasecanvas 137099 usecase_ref 130315 // Pregled pojedinacne porudzbine
-  xyzwh 344.6 450.4 3005 196 48 label_xy 362 465
+  xyzwh 343.611 449.51 3005 196 48 label_xy 362 465
+end
+classcanvas 137995 class_ref 135051 // Menadzer
+  simpleclassdiagramsettings end
+  xyz 182.989 979.602 2000
+end
+usecasecanvas 138123 usecase_ref 136843 // Kreiranje naloga za zaposlenog
+  xyzwh 370.477 954.137 3005 177 54 label_xy 383 975
+end
+usecasecanvas 138251 usecase_ref 136971 // Kreiranje rasporeda rada
+  xyzwh 295.656 890.938 3005 157 52 label_xy 312 910
+end
+usecasecanvas 138635 usecase_ref 137099 // Prikaz svih zaposlenih
+  xyzwh 393.88 1043.73 3005 128 54 label_xy 408 1063
+end
+usecasecanvas 138891 usecase_ref 137227 // Prikaz podataka o zaposlenom
+  xyzwh 681.446 1089.79 3005 166 48 label_xy 691 1104
+end
+usecasecanvas 139147 usecase_ref 137355 // Azuriranje podataka zaposlenog
+  xyzwh 661.093 945.539 3005 201 68 label_xy 685 968
+end
+usecasecanvas 139915 usecase_ref 137483 // Prikaz spiska namirnica za nabavku
+  xyzwh 237.244 1119.82 3005 185 51 label_xy 243 1137
+end
+usecasecanvas 140171 usecase_ref 137611 // Porucivanje namirnica
+  xyzwh 372.636 1248.42 3005 122 32 label_xy 381 1257
+end
+usecasecanvas 140427 usecase_ref 137739 // Dodavanje namirnica u spisak za nabavku
+  xyzwh 970.714 525.37 3005 244 75 label_xy 989 552
+end
+usecasecanvas 140811 usecase_ref 137867 // Kreiranje spiska za nabavku
+  xyzwh 135.156 850.405 3005 154 33 label_xy 143 859
+end
+usecasecanvas 141067 usecase_ref 137995 // Azuriranje spiska
+  xyzwh 166.156 761.54 3005 91 39 label_xy 171 773
 end
 line 128523 ----
   from ref 128011 z 3006 to ref 128395
 line 129419 ---- decenter_end 435
   from ref 129291 z 3011 to ref 128651
 simplerelationcanvas 130315 simplerelation_ref 128395
-  from ref 130187 z 3006 stereotype "<<extend>>" xyz 184 138.5 3000 to ref 128395
+  from ref 130187 z 3006 stereotype "<<extend>>" xyz 184 138 3000 to ref 128395
 end
 simplerelationcanvas 130443 simplerelation_ref 128523
-  from ref 128651 z 3006 stereotype "<<extend>>" xyz 273.5 202.5 3000 to ref 128395
+  from ref 128651 z 3006 stereotype "<<extend>>" xyz 273 202 3000 to ref 128395
 end
 simplerelationcanvas 130699 simplerelation_ref 128651
-  from ref 130187 z 3006 stereotype "<<include>>" xyz 313.5 92 3000 to ref 130571
+  from ref 130187 z 3006 stereotype "<<include>>" xyz 313 92 3000 to ref 130571
 end
 simplerelationcanvas 130827 simplerelation_ref 128779
-  from ref 128651 z 3006 stereotype "<<include>>" xyz 408 154.5 3000 to ref 130571
+  from ref 128651 z 3006 stereotype "<<include>>" xyz 408 154 3000 to ref 130571
 end
 simplerelationcanvas 131083 simplerelation_ref 128907
   from ref 130187 z 3006 stereotype "<<include>>" xyz 333 53 3000 to ref 130955
@@ -93,9 +127,9 @@ simplerelationcanvas 131595 simplerelation_ref 129163
   decenter_end 467
   from ref 131339 z 3006 to ref 129547
 end
-line 131723 ---- decenter_end 542
+line 131723 ---- decenter_end 541
   from ref 129931 z 3006 to ref 131211
-line 131979 ---- decenter_end 338
+line 131979 ---- decenter_end 337
   from ref 129931 z 3006 to ref 131851
 line 132107 ---- decenter_end 582
   from ref 130059 z 3006 to ref 131851
@@ -109,7 +143,7 @@ simplerelationcanvas 134411 simplerelation_ref 129419
   from ref 134027 z 3006 to ref 129547
 end
 simplerelationcanvas 135947 simplerelation_ref 129675
-  from ref 135691 z 3006 stereotype "<<include>>" xyz 717.5 87.5 3000 to ref 135819
+  from ref 135691 z 3006 stereotype "<<include>>" xyz 717 87 3000 to ref 135819
 end
 line 136075 ----
   from ref 129291 z 3011 to ref 135691
@@ -121,7 +155,7 @@ simplerelationcanvas 137227 simplerelation_ref 129931
   from ref 137099 z 3006 stereotype "<<extend>>" xyz 467 431 3000 to ref 129547
 end
 simplerelationcanvas 137355 simplerelation_ref 130059
-  from ref 131851 z 3006 stereotype "<<extend>>" xyz 405 527.5 3000 to ref 137099
+  from ref 131851 z 3006 stereotype "<<extend>>" xyz 405 527 3000 to ref 137099
 end
 simplerelationcanvas 137611 simplerelation_ref 130315
   from ref 132363 z 3006 stereotype "<<extend>>" xyz 335 258 3000 to ref 128651
@@ -129,5 +163,35 @@ end
 simplerelationcanvas 137867 simplerelation_ref 130443
   decenter_end 483
   from ref 133899 z 3006 to ref 134027
+end
+line 138379 ----
+  from ref 137995 z 3006 to ref 138251
+line 138507 ----
+  from ref 137995 z 3006 to ref 138123
+line 138763 ----
+  from ref 137995 z 3006 to ref 138635
+simplerelationcanvas 139531 simplerelation_ref 137227
+  decenter_begin 479
+  decenter_end 538
+  from ref 139147 z 3006 stereotype "<<extend>>" xyz 574 977 3000 to ref 138123
+end
+simplerelationcanvas 139659 simplerelation_ref 137355
+  decenter_begin 449
+  decenter_end 600
+  from ref 138891 z 3006 stereotype "<<extend>>" xyz 571.5 1092.5 3000 to ref 138635
+end
+line 140043 ----
+  from ref 137995 z 3006 to ref 139915
+simplerelationcanvas 140299 simplerelation_ref 137483
+  from ref 140171 z 3006 stereotype "<<extend>>" xyz 355.5 1207 3000 to ref 139915
+end
+line 140555 ----
+  from ref 130059 z 3006 to ref 140427
+line 140683 ----
+  from ref 129931 z 3006 to ref 140427
+line 140939 ----
+  from ref 137995 z 3006 to ref 140811
+simplerelationcanvas 141195 simplerelation_ref 137611
+  from ref 141067 z 3006 stereotype "<<extend>>" xyz 189.5 813.5 3000 to ref 140811
 end
 end
