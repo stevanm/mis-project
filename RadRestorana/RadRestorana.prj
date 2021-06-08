@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 2
+  revision 3
   modified_by 11 "ja"
 
 
@@ -105,15 +105,10 @@ ${members}}
       
       activitydiagramsettings
        end
-      simplerelation 128011
-	-_->
-	  on usecase_ref 128139 // Pregled menu-a
-      end
-
-      simplerelation 128139
+      simplerelation 144907
 	-_->
 	  stereotype "include"
-	  on usecase_ref 128267 // Kreiranje porudzbine u restoranu
+	  on usecase_ref 128651 // Odabir jela
       end
     end
 
@@ -138,21 +133,10 @@ ${members}}
       
       activitydiagramsettings
        end
-      simplerelation 128267
-	-_->
-	  on usecase_ref 128395 // Pregled svih porudzbina
-      end
-
-      simplerelation 128523
-	-_->
-	  stereotype "extend"
-	  on usecase_ref 128139 // Pregled menu-a
-      end
-
-      simplerelation 128779
+      simplerelation 144651
 	-_->
 	  stereotype "include"
-	  on usecase_ref 128651 // Odabir jela
+	  on usecase_ref 128139 // Pregled menu-a
       end
     end
 
@@ -242,22 +226,16 @@ ${members}}
       
       activitydiagramsettings
        end
-      simplerelation 128395
-	-_->
-	  stereotype "extend"
-	  on usecase_ref 128139 // Pregled menu-a
-      end
-
-      simplerelation 128651
-	-_->
-	  stereotype "include"
-	  on usecase_ref 128651 // Odabir jela
-      end
-
       simplerelation 128907
 	-_->
 	  stereotype "include"
 	  on usecase_ref 128779 // Unos podataka o dostavi
+      end
+
+      simplerelation 144779
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128139 // Pregled menu-a
       end
     end
 
@@ -831,6 +809,199 @@ ${members}}
 	-_->
 	  stereotype "extend"
 	  on usecase_ref 139147 // Kreiranje spiska za nabavku
+      end
+    end
+
+    activity 128011 "Dijagram Aktivnosti"
+      activitydiagram 134539 "Porucivanje-Gost"
+	activitydiagramsettings
+	 end
+	size A3
+      end
+
+      activitynode 128011 initial_node ""
+	flow 128011 "<flow>"
+	  on activityaction_ref 128011 // activity action Provera da li korisnik zeli kucnu dostavu ili porucuje u restoranu
+	end
+      end
+
+      activityaction 128011 "Provera da li korisnik zeli kucnu dostavu ili porucuje u restoranu"
+	opaque_action
+	flow 128139 "<flow>"
+	  on activitynode_ref 128139 // decision
+	end
+      end
+
+      activitynode 128139 decision ""
+	flow 128267 "odabrana kucna dostava"
+	  on activityaction_ref 128267 // activity action Unos adrese za dostavu
+	end
+
+	flow 128395 "Porucivanje u restoranu"
+	  on activityaction_ref 128139 // activity action Unos broja stola za kojim sedi
+	end
+      end
+
+      activityaction 128139 "Unos broja stola za kojim sedi"
+	opaque_action
+	flow 128523 "<flow>"
+	  on activitynode_ref 128267 // merge
+	end
+      end
+
+      activityaction 128267 "Unos adrese za dostavu"
+	opaque_action
+	flow 128651 "<flow>"
+	  on activitynode_ref 128267 // merge
+	end
+      end
+
+      activitynode 128267 merge ""
+	flow 128779 "<flow>"
+	  on activityaction_ref 128395 // activity action Pregled menija
+	end
+      end
+
+      activityaction 128395 "Pregled menija"
+	opaque_action
+	flow 128907 "<flow>"
+	  on activityaction_ref 128523 // activity action Odabir jela
+	end
+      end
+
+      activityaction 128523 "Odabir jela"
+	opaque_action
+	flow 129035 "<flow>"
+	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
+	end
+      end
+
+      activityaction 128651 "Provera statusa porudzbine"
+	opaque_action
+	flow 129163 "<flow>"
+	  on activitynode_ref 128395 // activity_final
+	end
+      end
+
+      activitynode 128395 activity_final ""
+      end
+
+      activitydiagram 134667 "Obrada porudzbine - Konobar"
+	activitydiagramsettings draw_all_relations no
+	 end
+	size A4
+      end
+
+      activityaction 129035 "Pregled aktivnih porudzbina"
+	opaque_action
+	flow 129675 "<flow>"
+	  on activityaction_ref 129163 // activity action Provera statusa odabrane porudzbine
+	end
+
+	flow 130187 "<flow>"
+	  on activitynode_ref 129035 // decision
+	end
+      end
+
+      activityaction 129163 "Provera statusa odabrane porudzbine"
+	opaque_action
+	flow 129803 "<flow>"
+	  on activitynode_ref 128779 // decision
+	end
+      end
+
+      activitynode 128651 initial_node ""
+	flow 129547 "<flow>"
+	  on activityaction_ref 129035 // activity action Pregled aktivnih porudzbina
+	end
+      end
+
+      activitynode 128779 decision "Da li je porrudzbina sprremna"
+	flow 129931 "Porudzbina spremna"
+	  on activityaction_ref 129291 // activity action Dostava porudzbine gostu
+	end
+
+	flow 130059 "Porudzbina u pripremi/ na cekanju"
+	  on activityaction_ref 129419 // activity action Provera da li ima jos porudzbina
+	end
+      end
+
+      activityaction 129291 "Dostava porudzbine gostu"
+	opaque_action
+	flow 130827 "<flow>"
+	  on activityaction_ref 129675 // activity action Provera da li gost zeli jos nesto da poruci
+	end
+      end
+
+      activityaction 129419 "Provera da li ima jos porudzbina"
+	opaque_action
+	flow 130571 "<flow>"
+	  on activitynode_ref 128907 // decision
+	end
+      end
+
+      activitynode 128907 decision "Da li ima jos porudzbina"
+	flow 130699 "ima jos aktivnih porudzbina"
+	  on activitynode_ref 129035 // decision
+	end
+
+	flow 131467 "nema drugih aktivnih porudzbina"
+	  on activitynode_ref 128779 // decision
+	end
+
+	flow 131851 "nema vise aktivnih porudzbina"
+	  on activitynode_ref 129419 // activity_final
+	end
+      end
+
+      activitynode 129035 decision ""
+	flow 130315 "<flow>"
+	  on activityaction_ref 129547 // activity action Izbor porudzbine
+	end
+      end
+
+      activityaction 129547 "Izbor porudzbine"
+	opaque_action
+	flow 130443 "<flow>"
+	  on activityaction_ref 129163 // activity action Provera statusa odabrane porudzbine
+	end
+      end
+
+      activityaction 129675 "Provera da li gost zeli jos nesto da poruci"
+	opaque_action
+	flow 130955 "<flow>"
+	  on activitynode_ref 129163 // decision
+	end
+      end
+
+      activitynode 129163 decision "Da li gost zeli jos nesto"
+	flow 131083 "Gost ne zeli nista vise"
+	  on activityaction_ref 129803 // activity action Naplata racuna
+	end
+
+	flow 131339 "Gost zeli da poruci jos nesto"
+	  on activityaction_ref 129931 // activity action Kreiranje nove porudzbine
+	end
+      end
+
+      activityaction 129803 "Naplata racuna"
+	opaque_action
+	flow 131211 "<flow>"
+	  on activitynode_ref 129291 // activity_final
+	end
+      end
+
+      activitynode 129291 activity_final ""
+      end
+
+      activityaction 129931 "Kreiranje nove porudzbine"
+	opaque_action
+	flow 131723 "<flow>"
+	  on activitynode_ref 129035 // decision
+	end
+      end
+
+      activitynode 129419 activity_final ""
       end
     end
   end
