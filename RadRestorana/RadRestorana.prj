@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 3
+  revision 4
   modified_by 11 "ja"
 
 
@@ -814,7 +814,7 @@ ${members}}
 
     activity 128011 "Dijagram Aktivnosti"
       activitydiagram 134539 "Porucivanje-Gost"
-	activitydiagramsettings
+	activitydiagramsettings draw_all_relations no
 	 end
 	size A3
       end
@@ -864,15 +864,15 @@ ${members}}
 
       activityaction 128395 "Pregled menija"
 	opaque_action
-	flow 128907 "<flow>"
-	  on activityaction_ref 128523 // activity action Odabir jela
+	flow 138379 "<flow>"
+	  on activitynode_ref 135947 // decision
 	end
       end
 
       activityaction 128523 "Odabir jela"
 	opaque_action
-	flow 129035 "<flow>"
-	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
+	flow 138635 "<flow>"
+	  on activitynode_ref 136203 // decision
 	end
       end
 
@@ -1002,6 +1002,22 @@ ${members}}
       end
 
       activitynode 129419 activity_final ""
+      end
+
+      activitynode 135947 decision ""
+	flow 138507 "<flow>"
+	  on activityaction_ref 128523 // activity action Odabir jela
+	end
+      end
+
+      activitynode 136203 decision "Da li poruciti jos neko jelo"
+	flow 138763 "odabir jos nekog artikla iz menija"
+	  on activitynode_ref 135947 // decision
+	end
+
+	flow 138891 "zavrsen odabir iz menija"
+	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
+	end
       end
     end
   end

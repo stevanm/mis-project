@@ -1,21 +1,15 @@
 window_sizes 1920 1017 450 1465 971 0
 
-diagrams
-  activitydiagram_ref 134539 // Porucivanje-Gost
-    1172 776 100 A3 0 0
-  activitydiagram_ref 134667 // Obrada porudzbine - Konobar
-    114 86 100 A4 108 0
-  active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
-    1465 971 100 A3 276 0
-end
 show_stereotypes
-selected usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
+selected activitydiagram_ref 134667 // Obrada porudzbine - Konobar
 open
   usecase_ref 128139 // Pregled menu-a
   usecase_ref 128267 // Kreiranje porudzbine u restoranu
   usecase_ref 128523 // Porucivanje hrane za dostavu
   usecase_ref 129163 // Azuriranje statusa porudzbine
   usecase_ref 129291 // Provera Statusa porudzbine
+  activityaction_ref 128395 // activity action Pregled menija
+  activityaction_ref 128523 // activity action Odabir jela
   activityaction_ref 129931 // activity action Kreiranje nove porudzbine
 end
 end
