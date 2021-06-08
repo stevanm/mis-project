@@ -1,7 +1,11 @@
 window_sizes 1920 1017 450 1465 971 0
 
+diagrams
+  active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
+    1465 971 100 A3 468 0
+end
 show_stereotypes
-selected activitydiagram_ref 134667 // Obrada porudzbine - Konobar
+selected usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
 open
   usecase_ref 128139 // Pregled menu-a
   usecase_ref 128267 // Kreiranje porudzbine u restoranu
