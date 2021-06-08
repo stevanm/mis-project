@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 4
+  revision 5
   modified_by 11 "ja"
 
 
@@ -871,14 +871,14 @@ ${members}}
 
       activityaction 128523 "Odabir jela"
 	opaque_action
-	flow 138635 "<flow>"
+	flow 145547 "<flow>"
 	  on activitynode_ref 136203 // decision
 	end
       end
 
       activityaction 128651 "Provera statusa porudzbine"
 	opaque_action
-	flow 129163 "<flow>"
+	flow 145419 "<flow>"
 	  on activitynode_ref 128395 // activity_final
 	end
       end
@@ -916,7 +916,7 @@ ${members}}
 	end
       end
 
-      activitynode 128779 decision "Da li je porrudzbina sprremna"
+      activitynode 128779 decision "Da li je porudzbina sprremna"
 	flow 129931 "Porudzbina spremna"
 	  on activityaction_ref 129291 // activity action Dostava porudzbine gostu
 	end
@@ -1016,6 +1016,17 @@ ${members}}
 	end
 
 	flow 138891 "zavrsen odabir iz menija"
+	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
+	end
+
+	flow 145675 "zavrsen odabir jela"
+	  on activityaction_ref 136459 // activity action Potvrda porudzbine
+	end
+      end
+
+      activityaction 136459 "Potvrda porudzbine"
+	opaque_action
+	flow 145803 "<flow>"
 	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
 	end
       end

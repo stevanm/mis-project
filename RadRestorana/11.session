@@ -8,8 +8,6 @@ open
   usecase_ref 128523 // Porucivanje hrane za dostavu
   usecase_ref 129163 // Azuriranje statusa porudzbine
   usecase_ref 129291 // Provera Statusa porudzbine
-  activityaction_ref 128395 // activity action Pregled menija
-  activityaction_ref 128523 // activity action Odabir jela
-  activityaction_ref 129931 // activity action Kreiranje nove porudzbine
+  activitynode_ref 128779 // decision
 end
 end

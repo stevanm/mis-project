@@ -37,16 +37,21 @@ end
 activityactioncanvas 130571 activityaction_ref 128651 // activity action Provera statusa porudzbine
   
   show_opaque_action_definition default
-  xyzwh 133.4 814.6 2000 101 61
+  xyzwh 129.4 901.6 2000 101 61
 end
 activitynodecanvas 130827 activitynode_ref 128395 // activity_final
-  xyz 301 834.6 2000
+  xyz 437 919.6 2000
 end
 activitynodecanvas 131211 activitynode_ref 135947 // decision
   xyz 164 553 2000
 end
 activitynodecanvas 131723 activitynode_ref 136203 // decision
   xyz 168 703 2000
+end
+activityactioncanvas 132875 activityaction_ref 136459 // activity action Potvrda porudzbine
+  
+  show_opaque_action_definition default
+  xyzwh 131 785 2005 100 60
 end
 flowcanvas 128267 flow_ref 128011 // <flow>
   
@@ -90,38 +95,42 @@ flowcanvas 130187 flow_ref 128779 // <flow>
   from ref 129419 z 2001 to ref 130059
    write_horizontally default
 end
-flowcanvas 130955 flow_ref 129163 // <flow>
-  decenter_begin 513
-  
-  from ref 130571 z 2001 to ref 130827
-   write_horizontally default
-end
 flowcanvas 131467 flow_ref 138379 // <flow>
   
   from ref 130059 z 2001 to ref 131211
    write_horizontally default
 end
 flowcanvas 131595 flow_ref 138507 // <flow>
-  decenter_begin 639
+  decenter_begin 638
   
   from ref 131211 z 2001 to ref 130315
    write_horizontally default
 end
-flowcanvas 131851 flow_ref 138635 // <flow>
-  
-  from ref 130315 z 2001 to ref 131723
-   write_horizontally default
-end
 flowcanvas 131979 flow_ref 138763 // odabir jos nekog artikla iz menija
   
-  from ref 131723 z 2001 label "odabir jos nekog artikla iz menija" xyz 194.5 732 3000 to point 327 719
+  from ref 131723 z 2001 label "odabir jos nekog artikla iz menija" xyz 194 732 2001 to point 327 719
   line 132235 z 2001 to point 324 567
   line 132107 z 2001 to ref 131211
    write_horizontally default
 end
-flowcanvas 132363 flow_ref 138891 // zavrsen odabir iz menija
+flowcanvas 132619 flow_ref 145419 // <flow>
   
-  from ref 131723 z 2001 label "zavrsen odabir iz menija" xyz 188 771 3000 to ref 130571
+  from ref 130571 z 2001 to ref 130827
+   write_horizontally default
+end
+flowcanvas 132747 flow_ref 145547 // <flow>
+  
+  from ref 130315 z 2001 to ref 131723
+   write_horizontally default
+end
+flowcanvas 133003 flow_ref 145675 // zavrsen odabir jela
+  
+  from ref 131723 z 2006 label "zavrsen odabir jela" xyz 181 757 3000 to ref 132875
+   write_horizontally default
+end
+flowcanvas 133131 flow_ref 145803 // <flow>
+  
+  from ref 132875 z 2006 to ref 130571
    write_horizontally default
 end
 end
