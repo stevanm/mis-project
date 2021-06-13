@@ -102,7 +102,7 @@ end
 line 129419 ---- decenter_end 435
   from ref 129291 z 3011 to ref 128651
 simplerelationcanvas 131083 simplerelation_ref 128907
-  from ref 130187 z 3006 stereotype "<<include>>" xyz 327.5 62.5 3000 to ref 130955
+  from ref 130187 z 3006 stereotype "<<include>>" xyz 327 62 3000 to ref 130955
 end
 simplerelationcanvas 131467 simplerelation_ref 129035
   decenter_end 393
@@ -144,7 +144,7 @@ simplerelationcanvas 137355 simplerelation_ref 130059
   from ref 131851 z 3006 stereotype "<<extend>>" xyz 405 527 3000 to ref 137099
 end
 simplerelationcanvas 137611 simplerelation_ref 130315
-  from ref 132363 z 3006 stereotype "<<extend>>" xyz 167.5 306 3000 to ref 128651
+  from ref 132363 z 3006 stereotype "<<extend>>" xyz 167 306 3000 to ref 128651
 end
 simplerelationcanvas 137867 simplerelation_ref 130443
   decenter_end 483
@@ -165,7 +165,7 @@ simplerelationcanvas 142859 simplerelation_ref 137867
   from ref 142731 z 3006 stereotype "<<extend>>" xyz 711 1007 3000 to ref 142475
 end
 simplerelationcanvas 143243 simplerelation_ref 137995
-  from ref 143115 z 3006 to ref 141835
+  from ref 143115 z 3006 stereotype "<<extend>>" xyz 296 1135 3000 to ref 141835
 end
 line 143499 ----
   from ref 129931 z 3006 to ref 143371
@@ -177,13 +177,13 @@ simplerelationcanvas 144139 simplerelation_ref 138123
   from ref 144011 z 3006 stereotype "<<extend>>" xyz 164 720 3000 to ref 143755
 end
 simplerelationcanvas 144267 simplerelation_ref 144651
-  from ref 128651 z 3006 stereotype "<<include>>" xyz 245 213.5 3000 to ref 128395
+  from ref 128651 z 3006 stereotype "<<include>>" xyz 245 213 3000 to ref 128395
 end
 simplerelationcanvas 144395 simplerelation_ref 144779
-  from ref 130187 z 3006 stereotype "<<include>>" xyz 248 137.5 3000 to ref 128395
+  from ref 130187 z 3006 stereotype "<<include>>" xyz 248 137 3000 to ref 128395
 end
 simplerelationcanvas 144523 simplerelation_ref 144907
-  from ref 128395 z 3006 stereotype "<<include>>" xyz 405.5 177.5 3000 to ref 130571
+  from ref 128395 z 3006 stereotype "<<include>>" xyz 405 177 3000 to ref 130571
 end
 line 144651 ----
   from ref 128011 z 3006 to ref 130187

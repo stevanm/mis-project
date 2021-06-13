@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 5
+  revision 6
   modified_by 11 "ja"
 
 
@@ -734,6 +734,7 @@ ${members}}
        end
       simplerelation 137995
 	-_->
+	  stereotype "extend"
 	  on usecase_ref 138507 // Prikaz spiska za nabavku
       end
     end
