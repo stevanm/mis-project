@@ -1,0 +1,12 @@
+window_sizes 1920 1001 450 1464 811 136
+
+diagrams
+  active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
+    1464 811 100 A3 492 0
+end
+show_stereotypes
+selected usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
+open
+  usecaseview_ref 128011 // RadRestorana
+end
+end

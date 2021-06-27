@@ -7,7 +7,6 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-/.idea/sonarlint
 .DS_Store
 /build
 /captures
@@ -103,6 +102,6 @@ lint/tmp/
 *.hprof
 
 
-# Visual Paradigm files
+# Visual Paradigm
 *.vpdm
 *.vpp

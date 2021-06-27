@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">restauranthost</string>
+    <string name="app_name" translatable="false">Domaćin</string>
+    <string name="manager" translatable="false">Manager</string>
+    <string name="waiter" translatable="false">Konobar</string>
+    <string name="bartender" translatable="false">Šanker</string>
+    <string name="chef" translatable="false">Kuvar</string>
+    <string name="add_order" translatable="false">Dodaj \\ Izmeni količine za porudžbinu:</string>
+    <string name="make_order">Kreiraj nabavku</string>
+    <string name="amount" translatable="false">količina:</string>
+    <string name="articles_list_created" translatable="false">Spisak artikala je kreiran!</string>
+
 </resources>

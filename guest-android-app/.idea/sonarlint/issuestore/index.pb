@@ -15,17 +15,12 @@ Happ/src/test/java/rs/ac/uns/pmf/mis/restaurantguest/ExampleUnitTest.java,7\f\7
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 ã
 [app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeItem.java,c\1\c1d2a4933b56f29e379dd900a7fd1d55e4ee33f3
 à
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/Employees.java,5\2\5221934d9f627c1a9fa8d427f2270a61227a1b0a
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 ç
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeEntity.java,f\b\fbdf43b9d3221ec91cac0e570952dec1ceb9f79f
 î
@@ -66,17 +61,11 @@ Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Wed
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 â
 Yapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Discount.java,2\c\2cd93a9d381fdf663aef5b2b2accc753ec000f96
-à
-Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplication.java,c\a\ca2a18cfe9be7109e46011acd4e4b2b7b4b97766
 è
 _app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
 à
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/SatItem.java,d\c\dc4b08b74d9b7647789ec4e6e04e676acafd09ff
-ó
-gapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/adapters/OrderMenuCategoryAdapter.java,8\8\88993278d603ceda3fd3f1b28f3cb56d2e14e29c
 ç
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/MainActivity.java,c\1\c1a39ad34c9bce0a99799cf84092f706c6935153
 ç
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/LoginFragment.java,a\e\aee4dfd73f791d00a759ee5feba6e7b54f795420
-ï
-eapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/viewmodels/MainViewModelFactory.java,7\9\79a5d70e9df06f6cac25f9a66e5f11210e6a1363
