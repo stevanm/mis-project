@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 6
+  revision 8
   modified_by 11 "ja"
 
 
@@ -563,7 +563,7 @@ ${members}}
       
     end
 
-    usecase 138123 "Kreiranje Rasporeda rada"
+    usecase 138123 "Kreiranje rasporeda rada"
       
       usecasediagramsettings end
       
@@ -610,29 +610,6 @@ ${members}}
     end
 
     usecase 138379 "Prikaz svih zaposlenih"
-      
-      usecasediagramsettings end
-      
-      sequencediagramsettings end
-      
-      collaborationdiagramsettings end
-      
-      classdiagramsettings member_max_width 0 end
-      
-      classcompositediagramsettings end
-      
-      objectdiagramsettings end
-      
-      objectcompositediagramsettings end
-      
-      statediagramsettings
-       end
-      
-      activitydiagramsettings
-       end
-    end
-
-    usecase 138507 "Prikaz spiska za nabavku"
       
       usecasediagramsettings end
       
@@ -711,34 +688,6 @@ ${members}}
       end
     end
 
-    usecase 138891 "Porucivanje namirnica"
-      
-      usecasediagramsettings end
-      
-      sequencediagramsettings end
-      
-      collaborationdiagramsettings end
-      
-      classdiagramsettings member_max_width 0 end
-      
-      classcompositediagramsettings end
-      
-      objectdiagramsettings end
-      
-      objectcompositediagramsettings end
-      
-      statediagramsettings
-       end
-      
-      activitydiagramsettings
-       end
-      simplerelation 137995
-	-_->
-	  stereotype "extend"
-	  on usecase_ref 138507 // Prikaz spiska za nabavku
-      end
-    end
-
     usecase 139019 "Dodavanje artikala na spisak za nabavku"
       
       usecasediagramsettings end
@@ -783,6 +732,11 @@ ${members}}
       
       activitydiagramsettings
        end
+      simplerelation 151435
+	-_->
+	  stereotype "include"
+	  on usecase_ref 145803 // Prikaz spiska za nabavku
+      end
     end
 
     usecase 139275 "Azuriranje spiska"
@@ -823,6 +777,10 @@ ${members}}
       activitynode 128011 initial_node ""
 	flow 128011 "<flow>"
 	  on activityaction_ref 128011 // activity action Provera da li korisnik zeli kucnu dostavu ili porucuje u restoranu
+	end
+
+	flow 152587 "<flow>"
+	  on activitynode_ref 142859 // merge
 	end
       end
 
@@ -881,6 +839,10 @@ ${members}}
 	opaque_action
 	flow 145419 "<flow>"
 	  on activitynode_ref 128395 // activity_final
+	end
+
+	flow 152331 "<flow>"
+	  on activitynode_ref 142731 // decision
 	end
       end
 
@@ -1030,6 +992,73 @@ ${members}}
 	flow 145803 "<flow>"
 	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
 	end
+      end
+
+      activitynode 142731 decision ""
+	flow 152459 "Kraj porudzbine"
+	  on activitynode_ref 128395 // activity_final
+	end
+
+	flow 152843 "Kreiranje nove porudzbine"
+	  on activitynode_ref 142859 // merge
+	end
+      end
+
+      activitynode 142859 merge ""
+	flow 152715 "<flow>"
+	  on activityaction_ref 128011 // activity action Provera da li korisnik zeli kucnu dostavu ili porucuje u restoranu
+	end
+      end
+    end
+
+    usecase 145803 "Prikaz spiska za nabavku"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 145931 "Porucivanje zeljenih artikala"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 151563
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 145803 // Prikaz spiska za nabavku
       end
     end
   end

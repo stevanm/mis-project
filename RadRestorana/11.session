@@ -1,8 +1,12 @@
-window_sizes 1920 1014 450 1465 968 0
+window_sizes 1920 1017 520 1395 971 0
 
 diagrams
   active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
-    1465 971 100 A3 468 0
+    1395 971 100 A3 456 0
+  activitydiagram_ref 134539 // Porucivanje-Gost
+    1465 971 100 A3 128 0
+  activitydiagram_ref 134667 // Obrada porudzbine - Konobar
+    114 86 150 A4 420 0
 end
 show_stereotypes
 selected usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
@@ -12,6 +16,7 @@ open
   usecase_ref 128523 // Porucivanje hrane za dostavu
   usecase_ref 129163 // Azuriranje statusa porudzbine
   usecase_ref 129291 // Provera Statusa porudzbine
+  activityaction_ref 128651 // activity action Provera statusa porudzbine
   activitynode_ref 128779 // decision
 end
 end

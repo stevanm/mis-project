@@ -3,63 +3,63 @@ format 224
 activityactioncanvas 128651 activityaction_ref 129035 // activity action Pregled aktivnih porudzbina
   
   show_opaque_action_definition default
-  xyzwh 161.6 271.6 2000 101 61
+  xyzwh 161.3 271.3 2000 101 61
 end
 activityactioncanvas 128779 activityaction_ref 129163 // activity action Provera statusa odabrane porudzbine
   
   show_opaque_action_definition default
-  xyzwh 165 436 2000 101 61
+  xyzwh 165.5 436.2 2000 101 61
 end
 activitynodecanvas 128907 activitynode_ref 128651 // initial_node
-  xyz 100.4 291 2000
+  xyz 100.7 291 2000
 end
 activitynodecanvas 129291 activitynode_ref 128779 // decision
-  xyz 204.6 508.6 2000
+  xyz 204.8 508.8 2000
 end
 activityactioncanvas 129547 activityaction_ref 129291 // activity action Dostava porudzbine gostu
   
   show_opaque_action_definition default
-  xyzwh 165 558.8 2000 101 61
+  xyzwh 165.5 558.4 2000 101 61
 end
 activityactioncanvas 130059 activityaction_ref 129419 // activity action Provera da li ima jos porudzbina
   
   show_opaque_action_definition default
-  xyzwh 330 638.8 2000 101 61
+  xyzwh 330 638.4 2000 101 61
 end
 activitynodecanvas 130571 activitynode_ref 128907 // decision
-  xyz 367.4 790.8 2000
+  xyz 368.7 790.4 2000
 end
 activitynodecanvas 130827 activitynode_ref 129035 // decision
-  xyz 200.2 338.6 2000
+  xyz 200.6 338.8 2000
 end
 activityactioncanvas 130955 activityaction_ref 129547 // activity action Izbor porudzbine
   
   show_opaque_action_definition default
-  xyzwh 163 378.8 2005 105 41
+  xyzwh 163.5 378.4 2005 105 41
 end
 activityactioncanvas 131979 activityaction_ref 129675 // activity action Provera da li gost zeli jos nesto da poruci
   
   show_opaque_action_definition default
-  xyzwh 166.6 641.6 2000 101 61
+  xyzwh 166.8 641.3 2000 101 61
 end
 activitynodecanvas 132235 activitynode_ref 129163 // decision
-  xyz 204.6 724.2 2000
+  xyz 204.8 724.6 2000
 end
 activityactioncanvas 132491 activityaction_ref 129803 // activity action Naplata racuna
   
   show_opaque_action_definition default
-  xyzwh 90.8 763.2 2005 77 39
+  xyzwh 90.4 763.6 2005 77 39
 end
 activitynodecanvas 132875 activitynode_ref 129291 // activity_final
-  xyz 116.8 816.8 2000
+  xyz 116.4 816.4 2000
 end
 activityactioncanvas 133131 activityaction_ref 129931 // activity action Kreiranje nove porudzbine
   
   show_opaque_action_definition default
-  xyzwh 175.6 823 2000 87 51
+  xyzwh 175.2 823.6 2000 87 51
 end
 activitynodecanvas 134923 activitynode_ref 129419 // activity_final
-  xyz 290 853 2000
+  xyz 290.4 853.5 2000
 end
 flowcanvas 129035 flow_ref 129547 // <flow>
   
@@ -73,13 +73,13 @@ flowcanvas 129419 flow_ref 129803 // <flow>
 end
 flowcanvas 129675 flow_ref 129931 // Porudzbina spremna
   
-  from ref 129291 z 2001 label "Porudzbina spremna" xyz 219 535.5 3000 to ref 129547
+  from ref 129291 z 2001 label "Porudzbina spremna" xyz 219 535 2001 to ref 129547
    write_horizontally default
 end
 flowcanvas 130187 flow_ref 130059 // Porudzbina u pripremi/ na cekanju
   decenter_begin 458
   
-  from ref 129291 z 2001 label "Porudzbina u pripremi/ na cekanju" xyz 224 506.5 3000 to point 375.6 522.8
+  from ref 129291 z 2001 label "Porudzbina u pripremi/ na cekanju" xyz 224 506 2001 to point 376.9 522.8
   line 130315 z 2001 to ref 130059
    write_horizontally default
 end
@@ -105,9 +105,10 @@ flowcanvas 131467 flow_ref 130571 // <flow>
    write_horizontally default
 end
 flowcanvas 131595 flow_ref 130699 // ima jos aktivnih porudzbina
+  decenter_begin 486
   
-  from ref 130571 z 2001 label "ima jos aktivnih porudzbina" xyz 388.5 809 3000 to point 470 805.8
-  line 131723 z 2001 to point 472.6 353.6
+  from ref 130571 z 2001 label "ima jos aktivnih porudzbina" xyz 391.5 810 2001 to point 475.4 806.9
+  line 131723 z 2001 to point 472.8 353.5
   line 131851 z 2001 to ref 130827
    write_horizontally default
 end
@@ -123,7 +124,7 @@ flowcanvas 132363 flow_ref 130955 // <flow>
 end
 flowcanvas 132619 flow_ref 131083 // Gost ne zeli nista vise
   
-  from ref 132235 z 2006 label "Gost ne zeli nista vise" xyz 103 727 3000 to point 123.6 739.2
+  from ref 132235 z 2006 label "Gost ne zeli nista vise" xyz 103 727 2006 to point 123.5 739.7
   line 132747 z 2006 to ref 132491
    write_horizontally default
 end
@@ -134,19 +135,19 @@ flowcanvas 133003 flow_ref 131211 // <flow>
 end
 flowcanvas 133259 flow_ref 131339 // Gost zeli da poruci jos nesto
   
-  from ref 132235 z 2001 label "Gost zeli da poruci jos nesto" xyz 214.5 772 3000 to ref 133131
+  from ref 132235 z 2001 label "Gost zeli da poruci jos nesto" xyz 214 772 2001 to ref 133131
    write_horizontally default
 end
 flowcanvas 134539 flow_ref 131723 // <flow>
   
-  from ref 133131 z 2001 to point 26 846
-  line 134667 z 2001 to point 25 355
+  from ref 133131 z 2001 to point 26.6 846.6
+  line 134667 z 2001 to point 25.9 355.9
   line 134795 z 2001 to ref 130827
    write_horizontally default
 end
 flowcanvas 135051 flow_ref 131851 // nema vise aktivnih porudzbina
   
-  from ref 130571 z 2001 label "nema vise aktivnih porudzbina" xyz 287 875 3000 to point 377 862
+  from ref 130571 z 2001 label "nema vise aktivnih porudzbina" xyz 287.5 875 2001 to point 377.3 862.8
   line 135179 z 2001 to ref 134923
    write_horizontally default
 end
