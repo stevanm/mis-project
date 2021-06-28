@@ -14,10 +14,12 @@ import org.jetbrains.annotations.NotNull;
 
 import rs.ac.uns.pmf.mis.restauranthost.R;
 import rs.ac.uns.pmf.mis.restauranthost.presentation.fragments.orders.OrderFragment;
+import rs.ac.uns.pmf.mis.restauranthost.presentation.fragments.workscheduler.EmployeeSchedulerFragment;
 
 public class ManagerFragment extends Fragment {
 
     private Button createOrderListButton;
+    private Button createWorkScheduler;
 
     public static Fragment newInstance() {
         return new ManagerFragment();
@@ -39,6 +41,15 @@ public class ManagerFragment extends Fragment {
                     .replace(R.id.container, OrderFragment.newInstance())
                     .commit();
         });
+
+        createWorkScheduler = view.findViewById(R.id.create_work_scheduler);
+        createWorkScheduler.setOnClickListener(v -> {
+            getParentFragmentManager().beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, EmployeeSchedulerFragment.newInstance())
+                    .commit();
+        });
+
 
     }
 

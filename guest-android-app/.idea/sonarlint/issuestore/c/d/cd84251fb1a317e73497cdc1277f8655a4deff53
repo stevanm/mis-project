@@ -1,5 +1,0 @@
-
-…
-java:S1319ƒ"nThe type of the "orders" object should be an interface such as "Map" rather than the implementation "HashMap".(§÷ßæ
-X
-java:S1126]"BReplace this if-then-else statement by a single method invocation.(Îðˆ´

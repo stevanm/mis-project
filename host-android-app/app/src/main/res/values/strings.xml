@@ -8,5 +8,9 @@
     <string name="make_order">Kreiraj nabavku</string>
     <string name="amount" translatable="false">količina:</string>
     <string name="articles_list_created" translatable="false">Spisak artikala je kreiran!</string>
+    <string name="edit">Izmeni</string>
+    <string name="save">Sačuvaj</string>
+    <string name="work_scheduler_description">Ovde unesite text...</string>
+    <string name="please_wait">Molimo Vas sacekajte! Cuvanje u toku ...</string>
 
 </resources>
