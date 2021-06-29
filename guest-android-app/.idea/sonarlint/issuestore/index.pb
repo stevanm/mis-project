@@ -51,8 +51,6 @@ Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Wed
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 ‰
 Yapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Discount.java,2\c\2cd93a9d381fdf663aef5b2b2accc753ec000f96
-
-_app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/SatItem.java,d\c\dc4b08b74d9b7647789ec4e6e04e676acafd09ff
 P
@@ -60,3 +58,23 @@ P
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+™
+iapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/OrderMenuCategoryFragment.java,e\2\e2937e0bd2d280066dbac8b7151f1e219183d717
+–
+fapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/OrderMenuItemsFragment.java,7\7\77709dc5780d3bcaf4a91d0978df802f65583720
+
+]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/StartFragment.java,6\d\6de9e35e4b9a714dbb3316c53931729c5516d7e3
+
+^app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/viewmodels/MainViewModel.java,3\1\311b0242c0197838610039dddea768a6a2e48ee4
+
+]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeEntity.java,f\b\fbdf43b9d3221ec91cac0e570952dec1ceb9f79f
+‚
+Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantDataSource.java,8\4\84dd522a5451b518e6b2c0c30b20f55c572199cb
+ˆ
+Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplication.java,c\a\ca2a18cfe9be7109e46011acd4e4b2b7b4b97766
+‚
+Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantRepository.java,b\e\be8c9685465c8ad69b745ccbd425db9104657d94
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+
+_app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4

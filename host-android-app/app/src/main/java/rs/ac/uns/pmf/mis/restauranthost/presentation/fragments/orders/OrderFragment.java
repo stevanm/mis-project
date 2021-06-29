@@ -24,7 +24,7 @@ import rs.ac.uns.pmf.mis.restauranthost.R;
 import rs.ac.uns.pmf.mis.restauranthost.data.MainRepository;
 import rs.ac.uns.pmf.mis.restauranthost.domain.model.ManagerOrderItem;
 import rs.ac.uns.pmf.mis.restauranthost.framework.HostApplication;
-import rs.ac.uns.pmf.mis.restauranthost.presentation.adapters.ManagerOrderAdapter;
+import rs.ac.uns.pmf.mis.restauranthost.presentation.adapters.OrderAdapter;
 import rs.ac.uns.pmf.mis.restauranthost.presentation.viewmodels.MainViewModel;
 import rs.ac.uns.pmf.mis.restauranthost.presentation.viewmodels.MainViewModelFactory;
 
@@ -33,7 +33,7 @@ public class OrderFragment extends Fragment {
 
     private Context context;
     private MainViewModel viewModel;
-    private ManagerOrderAdapter managerOrderAdapter;
+    private OrderAdapter managerOrderAdapter;
     private Button createOrder;
 
     @Override
@@ -66,7 +66,7 @@ public class OrderFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        managerOrderAdapter = new ManagerOrderAdapter(getActivity());
+        managerOrderAdapter = new OrderAdapter(getActivity());
         recyclerView.setAdapter(managerOrderAdapter);
 
         MainRepository mainRepository = ((HostApplication) context.getApplicationContext()).getMainRepository();

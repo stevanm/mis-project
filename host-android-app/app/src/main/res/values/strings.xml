@@ -12,5 +12,7 @@
     <string name="save">Sačuvaj</string>
     <string name="work_scheduler_description">Ovde unesite text...</string>
     <string name="please_wait">Molimo Vas sacekajte! Cuvanje u toku ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

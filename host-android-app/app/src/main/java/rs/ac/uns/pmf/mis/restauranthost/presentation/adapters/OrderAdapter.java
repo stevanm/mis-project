@@ -16,13 +16,13 @@ import java.util.List;
 import rs.ac.uns.pmf.mis.restauranthost.R;
 import rs.ac.uns.pmf.mis.restauranthost.domain.model.ManagerOrderItem;
 
-public class ManagerOrderAdapter extends RecyclerView.Adapter<ManagerOrderAdapter.OrderViewHolder> {
+public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHolder> {
 
     private final Activity activity;
 
     private final List<ManagerOrderItem> managerOrderItems = new ArrayList<>();
 
-    public ManagerOrderAdapter(Activity activity) {
+    public OrderAdapter(Activity activity) {
         this.activity = activity;
     }
 

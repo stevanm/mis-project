@@ -2,17 +2,20 @@ package rs.ac.uns.pmf.mis.restauranthost.data;
 
 import android.app.Application;
 
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import rs.ac.uns.pmf.mis.restauranthost.domain.model.ManagerEmployeeItem;
 import rs.ac.uns.pmf.mis.restauranthost.domain.model.ManagerOrderItem;
 
 public class MainDataSource implements MainRepository {
 
     private final Application application;
-    List<ManagerOrderItem> managerOrderItems = new ArrayList<>();
+    private List<ManagerOrderItem> managerOrderItems = new ArrayList<>();
+    private List<ManagerEmployeeItem> managerEmployeeItems = new ArrayList<>();
 
     public MainDataSource(Application application) {
         this.application = application;
@@ -56,6 +59,21 @@ public class MainDataSource implements MainRepository {
     @Override
     public void sendManagerOrderedItems(List<ManagerOrderItem> managerOrderItems) {
         this.managerOrderItems = managerOrderItems;
+    }
+
+    @Override
+    public LiveData<List<ManagerEmployeeItem>> getManagerEmployeeItems() {
+        managerEmployeeItems.add(new ManagerEmployeeItem(1, "Pera", "Peric"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(2, "Mika", "Mikic"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(3, "Zika", "Zikic"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(4, "Laza", "Lazic"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(5, "Steva", "Stevic"));
+        return new MutableLiveData<>(managerEmployeeItems);
+    }
+
+    @Override
+    public void sendManagerEmployeeItems(List<ManagerEmployeeItem> managerEmployeeItems) {
+        this.managerEmployeeItems = managerEmployeeItems;
     }
 
 }
