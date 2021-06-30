@@ -16,6 +16,8 @@ public class MainDataSource implements MainRepository {
     private final Application application;
     private List<ManagerOrderItem> managerOrderItems = new ArrayList<>();
     private List<ManagerEmployeeItem> managerEmployeeItems = new ArrayList<>();
+    private String workSchedulerNotes;
+    private ManagerEmployeeItem managerEmployeeItem;
 
     public MainDataSource(Application application) {
         this.application = application;
@@ -23,6 +25,7 @@ public class MainDataSource implements MainRepository {
 
     @Override
     public MutableLiveData<List<ManagerOrderItem>> getManagerOrderedItems() {
+        managerOrderItems.clear();
         managerOrderItems.add(new ManagerOrderItem("Artikal 1", 0));
         managerOrderItems.add(new ManagerOrderItem("Artikal 2", 0));
         managerOrderItems.add(new ManagerOrderItem("Artikal 3", 0));
@@ -63,17 +66,33 @@ public class MainDataSource implements MainRepository {
 
     @Override
     public LiveData<List<ManagerEmployeeItem>> getManagerEmployeeItems() {
-        managerEmployeeItems.add(new ManagerEmployeeItem(1, "Pera", "Peric"));
-        managerEmployeeItems.add(new ManagerEmployeeItem(2, "Mika", "Mikic"));
-        managerEmployeeItems.add(new ManagerEmployeeItem(3, "Zika", "Zikic"));
-        managerEmployeeItems.add(new ManagerEmployeeItem(4, "Laza", "Lazic"));
-        managerEmployeeItems.add(new ManagerEmployeeItem(5, "Steva", "Stevic"));
+        managerEmployeeItems.clear();
+        managerEmployeeItems.add(new ManagerEmployeeItem(1, "Pera", "Peric", "konobar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(2, "Mika", "Mikic", "sanker"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(3, "Zika", "Zikic", "pomocni radnik"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(4, "Laza", "Lazic", "konobar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(5, "Steva", "Stevic", "sanker"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(6, "Radovan", "Radovanovic", "kuvar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(7, "Luka", "Lukic", "konobar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(8, "Milan", "Milanovic", "kuvar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(9, "Dragan", "Ilic", "konobar"));
+        managerEmployeeItems.add(new ManagerEmployeeItem(10, "Zoran", "Panic", "kuvar"));
         return new MutableLiveData<>(managerEmployeeItems);
     }
 
     @Override
     public void sendManagerEmployeeItems(List<ManagerEmployeeItem> managerEmployeeItems) {
         this.managerEmployeeItems = managerEmployeeItems;
+    }
+
+    @Override
+    public void saveWorkSchedulerNotes(String workSchedulerNotes) {
+        this.workSchedulerNotes = workSchedulerNotes;
+    }
+
+    @Override
+    public void saveEditedManagerEmployeeItems(ManagerEmployeeItem managerEmployeeItem) {
+        this.managerEmployeeItem = managerEmployeeItem;
     }
 
 }

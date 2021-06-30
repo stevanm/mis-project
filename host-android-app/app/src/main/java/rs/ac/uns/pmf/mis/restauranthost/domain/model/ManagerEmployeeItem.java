@@ -8,17 +8,20 @@ public class ManagerEmployeeItem implements Parcelable {
     private int employeeId;
     private String employeeFirstName;
     private String employeeSecondName;
+    private String workPosition;
 
-    public ManagerEmployeeItem(int employeeId, String employeeFirstName, String employeeSecondName) {
+    public ManagerEmployeeItem(int employeeId, String employeeFirstName, String employeeSecondName, String workPosition) {
         this.employeeId = employeeId;
         this.employeeFirstName = employeeFirstName;
         this.employeeSecondName = employeeSecondName;
+        this.workPosition = workPosition;
     }
 
     protected ManagerEmployeeItem(Parcel in) {
         employeeId = in.readInt();
         employeeFirstName = in.readString();
         employeeSecondName = in.readString();
+        workPosition = in.readString();
     }
 
     public static final Creator<ManagerEmployeeItem> CREATOR = new Creator<ManagerEmployeeItem>() {
@@ -57,13 +60,12 @@ public class ManagerEmployeeItem implements Parcelable {
         this.employeeSecondName = employeeSecondName;
     }
 
-    @Override
-    public String toString() {
-        return "ManagerEmployeeItem{" +
-                "employeeId=" + employeeId +
-                ", employeeFirstName='" + employeeFirstName + '\'' +
-                ", employeeSecondName='" + employeeSecondName + '\'' +
-                '}';
+    public String getWorkPosition() {
+        return workPosition;
+    }
+
+    public void setWorkPosition(String workPosition) {
+        this.workPosition = workPosition;
     }
 
     @Override
@@ -76,5 +78,6 @@ public class ManagerEmployeeItem implements Parcelable {
         dest.writeInt(employeeId);
         dest.writeString(employeeFirstName);
         dest.writeString(employeeSecondName);
+        dest.writeString(workPosition);
     }
 }

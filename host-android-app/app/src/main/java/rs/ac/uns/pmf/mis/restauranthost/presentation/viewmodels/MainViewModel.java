@@ -32,4 +32,12 @@ public class MainViewModel extends ViewModel {
     public void sendManagerEmployeeItems(List<ManagerEmployeeItem> managerEmployeeItems) {
         mainRepository.sendManagerEmployeeItems(managerEmployeeItems);
     }
+
+    public void saveWorkSchedulerNotes(String workSchedulerNotes) {
+        mainRepository.saveWorkSchedulerNotes(workSchedulerNotes);
+    }
+
+    public void saveEditedManagerEmployeeItems(ManagerEmployeeItem managerEmployeeItem) {
+        mainRepository.saveEditedManagerEmployeeItems(managerEmployeeItem);
+    }
 }

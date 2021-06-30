@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,15 +40,12 @@ public class ManagerEmployeesAdapter extends RecyclerView.Adapter<ManagerEmploye
         holder.id.setText(String.valueOf(item.getEmployeeId()));
         holder.firstName.setText(item.getEmployeeFirstName());
         holder.secondName.setText(item.getEmployeeSecondName());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Toast.makeText(v.getContext(), item.toString(), Toast.LENGTH_SHORT).show();
-                ((AppCompatActivity) context).getSupportFragmentManager().beginTransaction()
-                        .addToBackStack(null)
-                        .replace(R.id.container, EmployeeDetailsFragment.newInstance(item))
-                        .commit();
-            }
+        holder.workPosition.setText(item.getWorkPosition());
+        holder.itemView.setOnClickListener(v -> {
+            ((AppCompatActivity) context).getSupportFragmentManager().beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, EmployeeDetailsFragment.newInstance(item))
+                    .commit();
         });
 
     }
@@ -68,12 +64,14 @@ public class ManagerEmployeesAdapter extends RecyclerView.Adapter<ManagerEmploye
         private final TextView id;
         private final TextView firstName;
         private final TextView secondName;
+        private final TextView workPosition;
 
         public EmployeeViewHolder(@NonNull View itemView) {
             super(itemView);
             id = itemView.findViewById(R.id.employee_id);
             firstName = itemView.findViewById(R.id.first_name);
             secondName = itemView.findViewById(R.id.second_name);
+            workPosition = itemView.findViewById(R.id.work_position);
         }
     }
 

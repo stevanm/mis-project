@@ -17,4 +17,7 @@ public interface MainRepository {
 
     void sendManagerEmployeeItems(List<ManagerEmployeeItem> managerEmployeeItems);
 
+    void saveWorkSchedulerNotes(String workSchedulerNotes);
+
+    void saveEditedManagerEmployeeItems(ManagerEmployeeItem managerEmployeeItem);
 }
