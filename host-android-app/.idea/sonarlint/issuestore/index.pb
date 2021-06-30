@@ -15,8 +15,6 @@ Qapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/framework/HostApplication.ja
 [app/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/MainFragment.java,0\9\097dd96892a8a29bb24db4fc073f4004ccad3440
 ”
 dapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/viewmodels/MainViewModelFactory.java,3\d\3d220a7a8862182777a6a2f75a9267c040b08b8a
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 :
@@ -24,5 +22,3 @@ P
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 …
 Uapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/domain/model/ManagerOrderItem.java,0\d\0d2e3ec28d9c5dc204a03a02c9669d0fd9a3dd81
-Š
-Zapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/OrderAdapter.java,6\6\66840d4807ecd5a94dd703e7af658980dfc35ebf

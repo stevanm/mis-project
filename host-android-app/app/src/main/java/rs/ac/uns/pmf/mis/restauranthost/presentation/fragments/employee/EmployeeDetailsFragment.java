@@ -3,6 +3,7 @@ package rs.ac.uns.pmf.mis.restauranthost.presentation.fragments.employee;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -102,8 +103,8 @@ public class EmployeeDetailsFragment extends Fragment {
                                         ((EditText) employeeEditableView.findViewById(R.id.second_name)).getText().toString().trim(),
                                         ((EditText) employeeEditableView.findViewById(R.id.work_position)).getText().toString().trim())
                         );
-                        Toast.makeText(view.getContext(), "Novi podaci se salju na server...", Toast.LENGTH_SHORT).show();
-                        dialog.dismiss();
+                        Toast.makeText(view.getContext(), "Podaci o zaposlenom biće ažurirani...", Toast.LENGTH_SHORT).show();
+                        new Handler().postDelayed(dialog::dismiss, 2000);
                     });
             AlertDialog alert = builder.create();
             alert.setView(employeeEditableView);
