@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Gost</string>
+    <string name="app_name" translatable="false">Guest</string>
     <string name="i_am_guest" translatable="false">Gost</string>
     <string name="i_am_waiter" translatable="false">Konobar</string>
     <string name="restaurant_menu" translatable="false">Meni</string>

@@ -53,8 +53,6 @@ Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Wed
 Yapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/Discount.java,2\c\2cd93a9d381fdf663aef5b2b2accc753ec000f96
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/restaurant/SatItem.java,d\c\dc4b08b74d9b7647789ec4e6e04e676acafd09ff
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
