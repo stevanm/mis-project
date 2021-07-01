@@ -22,3 +22,27 @@ dapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/viewmodels/Main
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 Ö
 Uapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/domain/model/ManagerOrderItem.java,0\d\0d2e3ec28d9c5dc204a03a02c9669d0fd9a3dd81
+ñ
+fapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/manager/ManagerFragment.java,5\d\5d5280950b2e81404592d53c6147aef7d042742c
+ò
+happ/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeFragment.java,9\4\946be0526d63c3c92c1d635c939ec393a636e9ba
+¶
+vapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/workscheduler/EmployeeSchedulerFragment.java,0\2\02b075d1a60403b614ffe614731021fb35f96e56
+ç
+]app/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/viewmodels/MainViewModel.java,f\2\f2c98dd82512228dc2f1bb898171e9d6f18e284f
+{
+Kapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/data/MainRepository.java,2\f\2f52ffa737738c965259e70b3a944cf74d337398
+{
+Kapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/data/MainDataSource.java,b\2\b23d92ed209c34a3bd0939a0d8ff7104151fcd8b
+à
+Xapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/domain/model/ManagerEmployeeItem.java,1\e\1e45778a16c05825df2b809f027f2b6140c56408
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+ä
+Zapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/OrderAdapter.java,6\6\66840d4807ecd5a94dd703e7af658980dfc35ebf
+ï
+eapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/ManagerEmployeesAdapter.java,2\e\2e1a5aeca25ed2da8cf80e05def0b0f288ebf3fd
+ì
+capp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/orders/OrderFragment.java,4\7\479508700a4b37249e80a11edec7e1e5d108c48d
+ü
+oapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeDetailsFragment.java,d\2\d243c1999fc66ee737eb5502d6f5ce290a9e4db8

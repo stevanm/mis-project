@@ -64,3 +64,17 @@ fapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/Orde
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/StartFragment.java,6\d\6de9e35e4b9a714dbb3316c53931729c5516d7e3
 
 ^app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/viewmodels/MainViewModel.java,3\1\311b0242c0197838610039dddea768a6a2e48ee4
+
+]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeEntity.java,f\b\fbdf43b9d3221ec91cac0e570952dec1ceb9f79f
+‚
+Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantDataSource.java,8\4\84dd522a5451b518e6b2c0c30b20f55c572199cb
+ˆ
+Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplication.java,c\a\ca2a18cfe9be7109e46011acd4e4b2b7b4b97766
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+
+_app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
+‚
+Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantRepository.java,b\e\be8c9685465c8ad69b745ccbd425db9104657d94
