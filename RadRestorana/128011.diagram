@@ -91,10 +91,10 @@ usecasecanvas 143755 usecase_ref 139147 // Kreiranje spiska za nabavku
   xyzwh 92 976 3005 166 65 label_xy 104 1000
 end
 usecasecanvas 144011 usecase_ref 139275 // Azuriranje spiska
-  xyzwh 251 1143 3005 102 51 label_xy 259 1159
+  xyzwh 238 1293 3005 102 51 label_xy 246 1309
 end
 usecasecanvas 144907 usecase_ref 145803 // Prikaz spiska za nabavku
-  xyzwh 60 1150 3010 156 64 label_xy 74 1175
+  xyzwh 104 1129 3010 156 64 label_xy 118 1154
 end
 usecasecanvas 145291 usecase_ref 145931 // Porucivanje zeljenih artikala
   xyzwh 63 1310 3005 149 53 label_xy 72 1327
@@ -168,10 +168,6 @@ line 143627 ---- decenter_end 680
   from ref 130059 z 3006 to ref 143371
 line 143883 ----
   from ref 143755 z 3006 to ref 141323
-simplerelationcanvas 144139 simplerelation_ref 138123
-  decenter_end 666
-  from ref 144011 z 3006 stereotype "<<extend>>" xyz 213 1090 3000 to ref 143755
-end
 simplerelationcanvas 144267 simplerelation_ref 144651
   from ref 128651 z 3006 stereotype "<<include>>" xyz 245 213 3000 to ref 128395
 end
@@ -186,11 +182,14 @@ line 144651 ----
 line 144779 ----
   from ref 128011 z 3006 to ref 128651
 simplerelationcanvas 145035 simplerelation_ref 151435
-  decenter_begin 286
+  decenter_begin 474
   decenter_end 504
-  from ref 143755 z 3011 stereotype "<<include>>" xyz 109 1093 3000 to ref 144907
+  from ref 143755 z 3011 stereotype "<<include>>" xyz 146.5 1082.5 3000 to ref 144907
 end
 simplerelationcanvas 145419 simplerelation_ref 151563
-  from ref 145291 z 3011 stereotype "<<extend>>" xyz 108 1260 3000 to ref 144907
+  from ref 145291 z 3011 stereotype "<<extend>>" xyz 127.5 1249.5 3000 to ref 144907
+end
+simplerelationcanvas 145547 simplerelation_ref 158091
+  from ref 144011 z 3011 stereotype "<<extend>>" xyz 207.5 1241.5 3000 to ref 144907
 end
 end

@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 8
+  revision 9
   modified_by 11 "ja"
 
 
@@ -760,10 +760,10 @@ ${members}}
       
       activitydiagramsettings
        end
-      simplerelation 138123
+      simplerelation 158091
 	-_->
 	  stereotype "extend"
-	  on usecase_ref 139147 // Kreiranje spiska za nabavku
+	  on usecase_ref 145803 // Prikaz spiska za nabavku
       end
     end
 
