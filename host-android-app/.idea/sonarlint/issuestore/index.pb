@@ -26,8 +26,6 @@ Uapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/domain/model/ManagerOrderIte
 fapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/manager/ManagerFragment.java,5\d\5d5280950b2e81404592d53c6147aef7d042742c
 ˜
 happ/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeFragment.java,9\4\946be0526d63c3c92c1d635c939ec393a636e9ba
-¦
-vapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/workscheduler/EmployeeSchedulerFragment.java,0\2\02b075d1a60403b614ffe614731021fb35f96e56
 
 ]app/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/viewmodels/MainViewModel.java,f\2\f2c98dd82512228dc2f1bb898171e9d6f18e284f
 {
@@ -46,3 +44,5 @@ eapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/Manage
 capp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/orders/OrderFragment.java,4\7\479508700a4b37249e80a11edec7e1e5d108c48d
 Ÿ
 oapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeDetailsFragment.java,d\2\d243c1999fc66ee737eb5502d6f5ce290a9e4db8
+¦
+vapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/workscheduler/EmployeeSchedulerFragment.java,0\2\02b075d1a60403b614ffe614731021fb35f96e56

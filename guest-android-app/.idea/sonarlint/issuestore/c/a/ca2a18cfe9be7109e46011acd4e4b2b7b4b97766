@@ -1,6 +1,5 @@
 
-n
-java:S1104
-"XMake appContainer a static final constant or non-public and provide accessors if needed.(«άλϋ
-J
-java:S1068"/Remove this unused "application" private field.(£ί™ώÿÿÿÿ
+l
+java:S1104"XMake appContainer a static final constant or non-public and provide accessors if needed.(«άλϋ
+H
+java:S1068"/Remove this unused "application" private field.(£ί™ώÿÿÿÿ
