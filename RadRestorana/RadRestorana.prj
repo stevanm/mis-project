@@ -1,6 +1,6 @@
 format 224
 "RadRestorana"
-  revision 9
+  revision 10
   modified_by 11 "ja"
 
 
@@ -133,10 +133,15 @@ ${members}}
       
       activitydiagramsettings
        end
-      simplerelation 144651
+      simplerelation 164875
+	---|>
+	  on usecase_ref 152459 // Porucivanje hrane
+      end
+
+      simplerelation 165131
 	-_->
 	  stereotype "include"
-	  on usecase_ref 128139 // Pregled menu-a
+	  on usecase_ref 152587 // Unos podataka o stolu
       end
     end
 
@@ -232,10 +237,9 @@ ${members}}
 	  on usecase_ref 128779 // Unos podataka o dostavi
       end
 
-      simplerelation 144779
-	-_->
-	  stereotype "include"
-	  on usecase_ref 128139 // Pregled menu-a
+      simplerelation 165003
+	---|>
+	  on usecase_ref 152459 // Porucivanje hrane
       end
     end
 
@@ -364,34 +368,6 @@ ${members}}
 	-_->
 	  stereotype "extend"
 	  on usecase_ref 130315 // Pregled pojedinacne porudzbine
-      end
-    end
-
-    usecase 129291 "Provera Statusa porudzbine"
-      
-      usecasediagramsettings end
-      
-      sequencediagramsettings end
-      
-      collaborationdiagramsettings end
-      
-      classdiagramsettings member_max_width 0 end
-      
-      classcompositediagramsettings end
-      
-      objectdiagramsettings end
-      
-      objectcompositediagramsettings end
-      
-      statediagramsettings
-       end
-      
-      activitydiagramsettings
-       end
-      simplerelation 130315
-	-_->
-	  stereotype "extend"
-	  on usecase_ref 128267 // Kreiranje porudzbine u restoranu
       end
     end
 
@@ -1060,6 +1036,58 @@ ${members}}
 	  stereotype "extend"
 	  on usecase_ref 145803 // Prikaz spiska za nabavku
       end
+    end
+
+    usecase 152459 "Porucivanje hrane"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 164619
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128139 // Pregled menu-a
+      end
+
+    end
+
+    usecase 152587 "Unos podataka o stolu"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
     end
   end
 end
