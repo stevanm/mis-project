@@ -15,9 +15,6 @@ public class SubItemsItem {
 	@SerializedName("price")
 	private String price;
 
-	@SerializedName("consumable")
-	private String consumable;
-
 	@SerializedName("name")
 	private String name;
 
@@ -43,10 +40,6 @@ public class SubItemsItem {
 
 	public String getPrice() {
 		return price;
-	}
-
-	public String getConsumable() {
-		return consumable;
 	}
 
 	public String getName() {
