@@ -66,8 +66,6 @@ fapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/fragments/Orde
 ^app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/viewmodels/MainViewModel.java,3\1\311b0242c0197838610039dddea768a6a2e48ee4
 
 ]app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/domain/model/employee/EmployeeEntity.java,f\b\fbdf43b9d3221ec91cac0e570952dec1ceb9f79f
-‚
-Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantDataSource.java,8\4\84dd522a5451b518e6b2c0c30b20f55c572199cb
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/framework/RestaurantApplication.java,c\a\ca2a18cfe9be7109e46011acd4e4b2b7b4b97766
 @

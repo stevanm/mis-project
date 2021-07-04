@@ -34,6 +34,8 @@ Kapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/data/MainRepository.java,2\
 Kapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/data/MainDataSource.java,b\2\b23d92ed209c34a3bd0939a0d8ff7104151fcd8b
 ˆ
 Xapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/domain/model/ManagerEmployeeItem.java,1\e\1e45778a16c05825df2b809f027f2b6140c56408
+Ÿ
+oapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeDetailsFragment.java,d\2\d243c1999fc66ee737eb5502d6f5ce290a9e4db8
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 Š
@@ -42,7 +44,5 @@ Zapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/OrderA
 eapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/adapters/ManagerEmployeesAdapter.java,2\e\2e1a5aeca25ed2da8cf80e05def0b0f288ebf3fd
 “
 capp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/orders/OrderFragment.java,4\7\479508700a4b37249e80a11edec7e1e5d108c48d
-Ÿ
-oapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/employee/EmployeeDetailsFragment.java,d\2\d243c1999fc66ee737eb5502d6f5ce290a9e4db8
 ¦
 vapp/src/main/java/rs/ac/uns/pmf/mis/restauranthost/presentation/fragments/workscheduler/EmployeeSchedulerFragment.java,0\2\02b075d1a60403b614ffe614731021fb35f96e56

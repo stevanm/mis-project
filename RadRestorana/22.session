@@ -1,8 +1,8 @@
-window_sizes 2400 1271 450 1944 1101 116
+window_sizes 2400 1271 421 1973 1061 156
 
 diagrams
   active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
-    1944 1101 90 A3 36 0
+    1973 1061 90 A3 0 0
 end
 show_stereotypes
 selected 
