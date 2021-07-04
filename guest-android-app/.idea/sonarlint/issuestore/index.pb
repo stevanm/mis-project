@@ -76,3 +76,5 @@ P
 _app/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/presentation/activities/SplashActivity.java,b\e\be7e395b7d3765be4cd0a8e19f9dc121e121fae4
 ‚
 Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantRepository.java,b\e\be8c9685465c8ad69b745ccbd425db9104657d94
+‚
+Rapp/src/main/java/rs/ac/uns/pmf/mis/restaurantguest/data/RestaurantDataSource.java,8\4\84dd522a5451b518e6b2c0c30b20f55c572199cb
