@@ -1,16 +1,14 @@
 window_sizes 1678 988 405 1268 942 0
 
-diagrams
-  active  usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
-    1268 942 100 A3 456 0
-end
 show_stereotypes
+selected usecasediagram_ref 128011 // Dijagram slucajeva koriscenja
 open
   usecase_ref 128139 // Pregled menu-a
   usecase_ref 128267 // Kreiranje porudzbine u restoranu
   usecase_ref 128523 // Porucivanje hrane za dostavu
   usecase_ref 129163 // Azuriranje statusa porudzbine
   usecase_ref 139275 // Azuriranje spiska
+  activity_ref 128011 // Dijagram Aktivnosti
   usecase_ref 152459 // Porucivanje hrane
 end
 end

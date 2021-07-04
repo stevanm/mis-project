@@ -34,13 +34,8 @@ activityactioncanvas 130315 activityaction_ref 128523 // activity action Odabir 
   show_opaque_action_definition default
   xyzwh 123.1 611.2 2000 101 61
 end
-activityactioncanvas 130571 activityaction_ref 128651 // activity action Provera statusa porudzbine
-  
-  show_opaque_action_definition default
-  xyzwh 123.3 887.5 2000 101 61
-end
 activitynodecanvas 130827 activitynode_ref 128395 // activity_final
-  xyz 32.1 989.9 2000
+  xyz 31.1 909.9 2000
 end
 activitynodecanvas 131211 activitynode_ref 135947 // decision
   xyz 159.4 552.5 2000
@@ -54,7 +49,7 @@ activityactioncanvas 132875 activityaction_ref 136459 // activity action Potvrda
   xyzwh 123.2 784.6 2005 101 61
 end
 activitynodecanvas 133259 activitynode_ref 142731 // decision
-  xyz 161.6 983.2 2000
+  xyz 162.6 904.2 2000
 end
 activitynodecanvas 133643 activitynode_ref 142859 // merge
   xyz 152.8 144.4 2005
@@ -69,7 +64,7 @@ end
 flowcanvas 128907 flow_ref 128267 // odabrana kucna dostava
   decenter_end 620
   
-  from ref 128395 z 2001 label "odabrana kucna dostava" xyz 171 294 2001 to point 271.7 307.2
+  from ref 128395 z 2001 label "odabrana kucna dostava" xyz 171 294 2001 to point 271 307
   line 129035 z 2001 to ref 128779
    write_horizontally default
 end
@@ -77,7 +72,7 @@ flowcanvas 129163 flow_ref 128395 // Porucivanje u restoranu
   decenter_begin 513
   decenter_end 374
   
-  from ref 128395 z 2001 label "Porucivanje u restoranu" xyz 47 294.5 2001 to point 64.8 307.2
+  from ref 128395 z 2001 label "Porucivanje u restoranu" xyz 47 294 2001 to point 64 307
   line 134411 z 2001 to ref 128651
    write_horizontally default
 end
@@ -85,14 +80,14 @@ flowcanvas 129547 flow_ref 128523 // <flow>
   decenter_begin 388
   decenter_end 513
   
-  from ref 128651 z 2001 to point 66.6 423
+  from ref 128651 z 2001 to point 66 423
   line 129931 z 2001 to ref 129419
    write_horizontally default
 end
 flowcanvas 129675 flow_ref 128651 // <flow>
   decenter_begin 625
   
-  from ref 128779 z 2001 to point 272.2 423.8
+  from ref 128779 z 2001 to point 272 423
   line 129803 z 2001 to ref 129419
    write_horizontally default
 end
@@ -118,8 +113,8 @@ end
 flowcanvas 131979 flow_ref 138763 // odabir jos nekog artikla iz menija
   decenter_begin 486
   
-  from ref 131723 z 2001 label "odabir jos nekog artikla iz menija" xyz 179.5 726 2001 to point 325.8 719.8
-  line 132235 z 2001 to point 326.4 567.2
+  from ref 131723 z 2001 label "odabir jos nekog artikla iz menija" xyz 179 726 2001 to point 325 719
+  line 132235 z 2001 to point 326 567
   line 132107 z 2001 to ref 131211
    write_horizontally default
 end
@@ -133,19 +128,9 @@ flowcanvas 133003 flow_ref 145675 // zavrsen odabir jela
   from ref 131723 z 2006 label "zavrsen odabir jela" xyz 174 757 2006 to ref 132875
    write_horizontally default
 end
-flowcanvas 133131 flow_ref 145803 // <flow>
-  
-  from ref 132875 z 2006 to ref 130571
-   write_horizontally default
-end
-flowcanvas 133387 flow_ref 152331 // <flow>
-  
-  from ref 130571 z 2001 to ref 133259
-   write_horizontally default
-end
 flowcanvas 133515 flow_ref 152459 // Kraj porudzbine
   
-  from ref 133259 z 2001 label "Kraj porudzbine" xyz 72 1004.5 3000 to ref 130827
+  from ref 133259 z 2001 label "Kraj porudzbine" xyz 72 924 2001 to ref 130827
    write_horizontally default
 end
 flowcanvas 133771 flow_ref 152587 // <flow>
@@ -159,10 +144,16 @@ flowcanvas 133899 flow_ref 152715 // <flow>
    write_horizontally default
 end
 flowcanvas 134027 flow_ref 152843 // Kreiranje nove porudzbine
+  decenter_begin 513
   
-  from ref 133259 z 2006 label "Kreiranje nove porudzbine" xyz 237 1006 3000 to point 420.8 998.6
-  line 134283 z 2006 to point 415.3 160.8
+  from ref 133259 z 2006 label "Kreiranje nove porudzbine" xyz 236.5 928.5 2006 to point 418 921
+  line 134283 z 2006 to point 415 160
   line 134155 z 2006 to ref 133643
+   write_horizontally default
+end
+flowcanvas 134539 flow_ref 159371 // <flow>
+  
+  from ref 132875 z 2006 to ref 133259
    write_horizontally default
 end
 end

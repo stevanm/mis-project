@@ -1,7 +1,7 @@
 format 224
 "RadRestorana"
-  revision 11
-  modified_by 2 "v-ivned"
+  revision 12
+  modified_by 11 "ja"
 
 
   
@@ -811,17 +811,6 @@ ${members}}
 	end
       end
 
-      activityaction 128651 "Provera statusa porudzbine"
-	opaque_action
-	flow 145419 "<flow>"
-	  on activitynode_ref 128395 // activity_final
-	end
-
-	flow 152331 "<flow>"
-	  on activitynode_ref 142731 // decision
-	end
-      end
-
       activitynode 128395 activity_final ""
       end
 
@@ -954,10 +943,6 @@ ${members}}
 	  on activitynode_ref 135947 // decision
 	end
 
-	flow 138891 "zavrsen odabir iz menija"
-	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
-	end
-
 	flow 145675 "zavrsen odabir jela"
 	  on activityaction_ref 136459 // activity action Potvrda porudzbine
 	end
@@ -965,8 +950,8 @@ ${members}}
 
       activityaction 136459 "Potvrda porudzbine"
 	opaque_action
-	flow 145803 "<flow>"
-	  on activityaction_ref 128651 // activity action Provera statusa porudzbine
+	flow 159371 "<flow>"
+	  on activitynode_ref 142731 // decision
 	end
       end
 
