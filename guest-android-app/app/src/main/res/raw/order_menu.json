@@ -134,7 +134,6 @@
       }
     ]
   },
-  "today": "Mon",
   "working-hours-start": "12:00:00",
   "working-hours-end": "22:30:00",
   "categorys": [
@@ -1454,6 +1453,5 @@
         }
       ]
     }
-  ],
-  "deals": []
+  ]
 }

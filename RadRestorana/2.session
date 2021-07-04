@@ -1,0 +1,9 @@
+window_sizes 1920 1017 450 1465 867 104
+
+show_stereotypes
+selected usecase_ref 138123 // Kreiranje rasporeda rada
+open
+  usecase_ref 128139 // Pregled menu-a
+  usecase_ref 130315 // Pregled pojedinacne porudzbine
+end
+end

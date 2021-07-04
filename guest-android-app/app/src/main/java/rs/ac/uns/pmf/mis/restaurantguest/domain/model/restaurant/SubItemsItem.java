@@ -27,9 +27,6 @@ public class SubItemsItem {
 	@SerializedName("position")
 	private Integer position;
 
-	@SerializedName("tags")
-	private List<Object> tags;
-
 	public String getCuisineName() {
 		return cuisineName;
 	}
@@ -56,9 +53,5 @@ public class SubItemsItem {
 
 	public Integer getPosition() {
 		return position;
-	}
-
-	public List<Object> getTags() {
-		return tags;
 	}
 }

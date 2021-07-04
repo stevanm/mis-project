@@ -12,9 +12,6 @@ public class MenuItemsItem implements Parcelable {
 	@SerializedName("sub-items")
 	private List<SubItemsItem> subItems;
 
-	@SerializedName("images")
-	private List<Object> images;
-
 	@SerializedName("name")
 	private String name;
 
@@ -52,10 +49,6 @@ public class MenuItemsItem implements Parcelable {
 
 	public List<SubItemsItem> getSubItems() {
 		return subItems;
-	}
-
-	public List<Object> getImages() {
-		return images;
 	}
 
 	public String getName() {
