@@ -12,12 +12,6 @@ public class RestaurantInfo {
 	@SerializedName("payment-methods")
 	private List<PaymentMethodsItem> paymentMethods;
 
-	@SerializedName("facebook-like-link")
-	private String facebookLikeLink;
-
-	@SerializedName("open-status")
-	private String openStatus;
-
 	@SerializedName("rating")
 	private String rating;
 
@@ -33,9 +27,6 @@ public class RestaurantInfo {
 	@SerializedName("restaurant-images")
 	private List<String> restaurantImages;
 
-	@SerializedName("social-share")
-	private String socialShare;
-
 	@SerializedName("ratings")
 	private List<RatingsItem> ratings;
 
@@ -44,9 +35,6 @@ public class RestaurantInfo {
 
 	@SerializedName("id")
 	private String id;
-
-	@SerializedName("total-category")
-	private String totalCategory;
 
 	@SerializedName("default-ad")
 	private String defaultAd;
@@ -57,17 +45,8 @@ public class RestaurantInfo {
 	@SerializedName("review-enabled")
 	private String reviewEnabled;
 
-	@SerializedName("location-img")
-	private String locationImg;
-
 	@SerializedName("address")
 	private String address;
-
-	@SerializedName("avg_delivery_time")
-	private String avgDeliveryTime;
-
-	@SerializedName("sponsored")
-	private String sponsored;
 
 	@SerializedName("minimum-order-price")
 	private String minimumOrderPrice;
@@ -77,9 +56,6 @@ public class RestaurantInfo {
 
 	@SerializedName("restaurant-url")
 	private String restaurantUrl;
-
-	@SerializedName("user-favourite")
-	private String userFavourite;
 
 	@SerializedName("deliverable-area")
 	private List<DeliverableAreaItem> deliverableArea;
@@ -99,14 +75,6 @@ public class RestaurantInfo {
 
 	public List<PaymentMethodsItem> getPaymentMethods() {
 		return paymentMethods;
-	}
-
-	public String getFacebookLikeLink() {
-		return facebookLikeLink;
-	}
-
-	public String getOpenStatus() {
-		return openStatus;
 	}
 
 	public String getRating() {
@@ -129,10 +97,6 @@ public class RestaurantInfo {
 		return restaurantImages;
 	}
 
-	public String getSocialShare() {
-		return socialShare;
-	}
-
 	public List<RatingsItem> getRatings() {
 		return ratings;
 	}
@@ -143,10 +107,6 @@ public class RestaurantInfo {
 
 	public String getId() {
 		return id;
-	}
-
-	public String getTotalCategory() {
-		return totalCategory;
 	}
 
 	public String getDefaultAd() {
@@ -161,20 +121,8 @@ public class RestaurantInfo {
 		return reviewEnabled;
 	}
 
-	public String getLocationImg() {
-		return locationImg;
-	}
-
 	public String getAddress() {
 		return address;
-	}
-
-	public String getAvgDeliveryTime() {
-		return avgDeliveryTime;
-	}
-
-	public String getSponsored() {
-		return sponsored;
 	}
 
 	public String getMinimumOrderPrice() {
@@ -187,10 +135,6 @@ public class RestaurantInfo {
 
 	public String getRestaurantUrl() {
 		return restaurantUrl;
-	}
-
-	public String getUserFavourite() {
-		return userFavourite;
 	}
 
 	public List<DeliverableAreaItem> getDeliverableArea() {

@@ -6,8 +6,6 @@ public class EmployeeItem{
 
 	private String lastName;
 
-	private String photo;
-
 	private String id;
 
 	public String getFirstName(){
@@ -16,10 +14,6 @@ public class EmployeeItem{
 
 	public String getLastName(){
 		return lastName;
-	}
-
-	public String getPhoto(){
-		return photo;
 	}
 
 	public String getId(){
@@ -31,8 +25,7 @@ public class EmployeeItem{
 		return 
 			"EmployeeItem{" + 
 			"firstName = '" + firstName + '\'' + 
-			",lastName = '" + lastName + '\'' + 
-			",photo = '" + photo + '\'' + 
+			",lastName = '" + lastName + '\'' +
 			",id = '" + id + '\'' + 
 			"}";
 		}
